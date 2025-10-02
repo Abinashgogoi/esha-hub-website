@@ -1,0 +1,31 @@
+@font-face {
+  font-family: "Afacad";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Afacad-Regular"),
+    url(Afacad/Afacad-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Afacad";
+  font-style: italic;
+  font-weight: 400;
+  src: local("Afacad-Italic"),
+  url(Afacad/Afacad-Italic.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Afacad";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Afacad-Bold"),
+    url(Afacad/Afacad-Bold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Afacad";
+  font-style: italic;
+  font-weight: 700;
+  src: local("Afacad-BoldItalic"),
+  url(Afacad/Afacad-BoldItalic.ttf) format("truetype");
+}

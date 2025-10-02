@@ -1,0 +1,2680 @@
+<!DOCTYPE html>
+
+
+<html class="is-builder desktop mbr-site-loaded">
+<head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <base href="."/>
+<meta content="width=device-width, user-scalable=no" name="viewport"/>
+<link href="./builder.css" rel="stylesheet"/>
+<link href="./css2" rel="stylesheet"/>
+<!-- Insert additional styles / scripts from components -->
+<link href="./item-wizard.css" rel="stylesheet"/><link href="./style(1).css" rel="stylesheet"/><link href="./mobirise-icons.css" rel="stylesheet"/><link href="./mobirise2.css" rel="stylesheet"/><link href="./bootstrap.min.css" rel="stylesheet"/><link href="./bootstrap-grid.min.css" rel="stylesheet"/><link href="./bootstrap-reboot.min.css" rel="stylesheet"/><link href="./jarallax.css" rel="stylesheet"/><link href="./gdpr-styles.css" rel="stylesheet"/><link href="./styles.css" rel="stylesheet"/><link href="./style(2).css" rel="stylesheet"/><link href="./vanilla-dataTables.min.css" rel="stylesheet"/><link href="./progress.min.css" rel="stylesheet"/><link href="./style(3).css" rel="stylesheet"/><link href="./style(4).css" rel="stylesheet"/><link href="./style(5).css" rel="stylesheet"/><link href="./style(6).css" rel="stylesheet"/><link href="./style(7).css" rel="stylesheet"/><link id="insertBefore"/>
+<style name="theme-styles">.btn {
+  border-width: 2px;
+}
+.video-wrapper {
+  overflow: hidden;
+}
+body {
+  background-color: #eff5f2;
+}
+.is-builder .template {
+  background-color: #eff5f2;
+}
+body {
+  font-family: Manrope;
+}
+.display-1 {
+  font-family: 'Manrope', sans-serif;
+  font-size: 4.7rem;
+  line-height: 1;
+}
+.display-1 > .mbr-iconfont {
+  font-size: 5.875rem;
+}
+.display-2 {
+  font-family: 'Manrope', sans-serif;
+  font-size: 4rem;
+  line-height: 1.15;
+}
+.display-2 > .mbr-iconfont {
+  font-size: 5rem;
+}
+.display-4 {
+  font-family: 'Manrope', sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.4;
+}
+.display-4 > .mbr-iconfont {
+  font-size: 1.5625rem;
+}
+.display-5 {
+  font-family: 'Manrope', sans-serif;
+  font-size: 2.25rem;
+  line-height: 1.2;
+}
+.display-5 > .mbr-iconfont {
+  font-size: 2.8125rem;
+}
+.display-7 {
+  font-family: 'Manrope', sans-serif;
+  font-size: 1.8rem;
+  line-height: 1.2;
+}
+.display-7 > .mbr-iconfont {
+  font-size: 2.25rem;
+}
+/* ---- Fluid typography for mobile devices ---- */
+/* 1.4 - font scale ratio ( bootstrap == 1.42857 ) */
+/* 100vw - current viewport width */
+/* (48 - 20)  48 == 48rem == 768px, 20 == 20rem == 320px(minimal supported viewport) */
+/* 0.65 - min scale variable, may vary */
+@media (max-width: 992px) {
+  .display-1 {
+    font-size: 3.76rem;
+  }
+}
+@media (max-width: 768px) {
+  .display-1 {
+    font-size: 3.29rem;
+    font-size: calc( 2.295rem + (4.7 - 2.295) * ((100vw - 20rem) / (48 - 20)));
+    line-height: calc( 1.1 * (2.295rem + (4.7 - 2.295) * ((100vw - 20rem) / (48 - 20))));
+  }
+  .display-2 {
+    font-size: 3.2rem;
+    font-size: calc( 2.05rem + (4 - 2.05) * ((100vw - 20rem) / (48 - 20)));
+    line-height: calc( 1.3 * (2.05rem + (4 - 2.05) * ((100vw - 20rem) / (48 - 20))));
+  }
+  .display-4 {
+    font-size: 1rem;
+    font-size: calc( 1.0875rem + (1.25 - 1.0875) * ((100vw - 20rem) / (48 - 20)));
+    line-height: calc( 1.4 * (1.0875rem + (1.25 - 1.0875) * ((100vw - 20rem) / (48 - 20))));
+  }
+  .display-5 {
+    font-size: 1.8rem;
+    font-size: calc( 1.4375rem + (2.25 - 1.4375) * ((100vw - 20rem) / (48 - 20)));
+    line-height: calc( 1.4 * (1.4375rem + (2.25 - 1.4375) * ((100vw - 20rem) / (48 - 20))));
+  }
+  .display-7 {
+    font-size: 1.44rem;
+    font-size: calc( 1.28rem + (1.8 - 1.28) * ((100vw - 20rem) / (48 - 20)));
+    line-height: calc( 1.4 * (1.28rem + (1.8 - 1.28) * ((100vw - 20rem) / (48 - 20))));
+  }
+}
+/* Buttons */
+.btn {
+  padding: 1.25rem 2rem;
+  border-radius: 4px;
+  padding: 0.75rem 1.5rem;
+}
+.btn-sm {
+  padding: 0.6rem 1.2rem;
+  border-radius: 4px;
+}
+.btn-md {
+  padding: 0.6rem 1.2rem;
+  border-radius: 4px;
+}
+.btn-lg {
+  padding: 1.25rem 2rem;
+  border-radius: 4px;
+}
+.bg-primary {
+  background-color: #aac7ca !important;
+}
+.bg-success {
+  background-color: #60e1a5 !important;
+}
+.bg-info {
+  background-color: #4cd9f5 !important;
+}
+.bg-warning {
+  background-color: #ffd042 !important;
+}
+.bg-danger {
+  background-color: #e35e6b !important;
+}
+.btn-primary,
+.btn-primary:active {
+  background-color: #aac7ca !important;
+  border-color: #aac7ca !important;
+  color: #ffffff !important;
+  box-shadow: none;
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary.focus,
+.btn-primary.active {
+  color: inherit;
+  background-color: #c9dcde !important;
+  border-color: #c9dcde !important;
+  box-shadow: none;
+}
+.btn-primary.disabled,
+.btn-primary:disabled {
+  color: #ffffff !important;
+  background-color: #c9dcde !important;
+  border-color: #c9dcde !important;
+}
+.btn-secondary,
+.btn-secondary:active {
+  background-color: #d68289 !important;
+  border-color: #d68289 !important;
+  color: #ffffff !important;
+  box-shadow: none;
+}
+.btn-secondary:hover,
+.btn-secondary:focus,
+.btn-secondary.focus,
+.btn-secondary.active {
+  color: inherit;
+  background-color: #e3a8ad !important;
+  border-color: #e3a8ad !important;
+  box-shadow: none;
+}
+.btn-secondary.disabled,
+.btn-secondary:disabled {
+  color: #ffffff !important;
+  background-color: #e3a8ad !important;
+  border-color: #e3a8ad !important;
+}
+.btn-info,
+.btn-info:active {
+  background-color: #4cd9f5 !important;
+  border-color: #4cd9f5 !important;
+  color: #ffffff !important;
+  box-shadow: none;
+}
+.btn-info:hover,
+.btn-info:focus,
+.btn-info.focus,
+.btn-info.active {
+  color: inherit;
+  background-color: #7ce3f8 !important;
+  border-color: #7ce3f8 !important;
+  box-shadow: none;
+}
+.btn-info.disabled,
+.btn-info:disabled {
+  color: #ffffff !important;
+  background-color: #7ce3f8 !important;
+  border-color: #7ce3f8 !important;
+}
+.btn-success,
+.btn-success:active {
+  background-color: #60e1a5 !important;
+  border-color: #60e1a5 !important;
+  color: #ffffff !important;
+  box-shadow: none;
+}
+.btn-success:hover,
+.btn-success:focus,
+.btn-success.focus,
+.btn-success.active {
+  color: inherit;
+  background-color: #8be9bd !important;
+  border-color: #8be9bd !important;
+  box-shadow: none;
+}
+.btn-success.disabled,
+.btn-success:disabled {
+  color: #ffffff !important;
+  background-color: #8be9bd !important;
+  border-color: #8be9bd !important;
+}
+.btn-warning,
+.btn-warning:active {
+  background-color: #ffd042 !important;
+  border-color: #ffd042 !important;
+  color: #423200 !important;
+  box-shadow: none;
+}
+.btn-warning:hover,
+.btn-warning:focus,
+.btn-warning.focus,
+.btn-warning.active {
+  color: inherit;
+  background-color: #ffdd75 !important;
+  border-color: #ffdd75 !important;
+  box-shadow: none;
+}
+.btn-warning.disabled,
+.btn-warning:disabled {
+  color: #423200 !important;
+  background-color: #ffdd75 !important;
+  border-color: #ffdd75 !important;
+}
+.btn-danger,
+.btn-danger:active {
+  background-color: #e35e6b !important;
+  border-color: #e35e6b !important;
+  color: #ffffff !important;
+  box-shadow: none;
+}
+.btn-danger:hover,
+.btn-danger:focus,
+.btn-danger.focus,
+.btn-danger.active {
+  color: inherit;
+  background-color: #eb8993 !important;
+  border-color: #eb8993 !important;
+  box-shadow: none;
+}
+.btn-danger.disabled,
+.btn-danger:disabled {
+  color: #ffffff !important;
+  background-color: #eb8993 !important;
+  border-color: #eb8993 !important;
+}
+.btn-white,
+.btn-white:active {
+  background-color: #ffffff !important;
+  border-color: #ffffff !important;
+  color: #808080 !important;
+  box-shadow: none;
+}
+.btn-white:hover,
+.btn-white:focus,
+.btn-white.focus,
+.btn-white.active {
+  color: inherit;
+  background-color: #ffffff !important;
+  border-color: #ffffff !important;
+  box-shadow: none;
+}
+.btn-white.disabled,
+.btn-white:disabled {
+  color: #808080 !important;
+  background-color: #ffffff !important;
+  border-color: #ffffff !important;
+}
+.btn-black,
+.btn-black:active {
+  background-color: #232323 !important;
+  border-color: #232323 !important;
+  color: #ffffff !important;
+  box-shadow: none;
+}
+.btn-black:hover,
+.btn-black:focus,
+.btn-black.focus,
+.btn-black.active {
+  color: inherit;
+  background-color: #3d3d3d !important;
+  border-color: #3d3d3d !important;
+  box-shadow: none;
+}
+.btn-black.disabled,
+.btn-black:disabled {
+  color: #ffffff !important;
+  background-color: #3d3d3d !important;
+  border-color: #3d3d3d !important;
+}
+.btn-primary-outline,
+.btn-primary-outline:active {
+  background-color: transparent !important;
+  border-color: #aac7ca;
+  color: #aac7ca;
+}
+.btn-primary-outline:hover,
+.btn-primary-outline:focus,
+.btn-primary-outline.focus,
+.btn-primary-outline.active {
+  color: #75a4a9 !important;
+  background-color: transparent !important;
+  border-color: #75a4a9 !important;
+  box-shadow: none !important;
+}
+.btn-primary-outline.disabled,
+.btn-primary-outline:disabled {
+  color: #ffffff !important;
+  background-color: #aac7ca !important;
+  border-color: #aac7ca !important;
+}
+.btn-secondary-outline,
+.btn-secondary-outline:active {
+  background-color: transparent !important;
+  border-color: #d68289;
+  color: #d68289;
+}
+.btn-secondary-outline:hover,
+.btn-secondary-outline:focus,
+.btn-secondary-outline.focus,
+.btn-secondary-outline.active {
+  color: #c1414b !important;
+  background-color: transparent !important;
+  border-color: #c1414b !important;
+  box-shadow: none !important;
+}
+.btn-secondary-outline.disabled,
+.btn-secondary-outline:disabled {
+  color: #ffffff !important;
+  background-color: #d68289 !important;
+  border-color: #d68289 !important;
+}
+.btn-info-outline,
+.btn-info-outline:active {
+  background-color: transparent !important;
+  border-color: #4cd9f5;
+  color: #4cd9f5;
+}
+.btn-info-outline:hover,
+.btn-info-outline:focus,
+.btn-info-outline.focus,
+.btn-info-outline.active {
+  color: #0cbbde !important;
+  background-color: transparent !important;
+  border-color: #0cbbde !important;
+  box-shadow: none !important;
+}
+.btn-info-outline.disabled,
+.btn-info-outline:disabled {
+  color: #ffffff !important;
+  background-color: #4cd9f5 !important;
+  border-color: #4cd9f5 !important;
+}
+.btn-success-outline,
+.btn-success-outline:active {
+  background-color: transparent !important;
+  border-color: #60e1a5;
+  color: #60e1a5;
+}
+.btn-success-outline:hover,
+.btn-success-outline:focus,
+.btn-success-outline.focus,
+.btn-success-outline.active {
+  color: #25c57b !important;
+  background-color: transparent !important;
+  border-color: #25c57b !important;
+  box-shadow: none !important;
+}
+.btn-success-outline.disabled,
+.btn-success-outline:disabled {
+  color: #ffffff !important;
+  background-color: #60e1a5 !important;
+  border-color: #60e1a5 !important;
+}
+.btn-warning-outline,
+.btn-warning-outline:active {
+  background-color: transparent !important;
+  border-color: #ffd042;
+  color: #ffd042;
+}
+.btn-warning-outline:hover,
+.btn-warning-outline:focus,
+.btn-warning-outline.focus,
+.btn-warning-outline.active {
+  color: #eab000 !important;
+  background-color: transparent !important;
+  border-color: #eab000 !important;
+  box-shadow: none !important;
+}
+.btn-warning-outline.disabled,
+.btn-warning-outline:disabled {
+  color: #423200 !important;
+  background-color: #ffd042 !important;
+  border-color: #ffd042 !important;
+}
+.btn-danger-outline,
+.btn-danger-outline:active {
+  background-color: transparent !important;
+  border-color: #e35e6b;
+  color: #e35e6b;
+}
+.btn-danger-outline:hover,
+.btn-danger-outline:focus,
+.btn-danger-outline.focus,
+.btn-danger-outline.active {
+  color: #c82333 !important;
+  background-color: transparent !important;
+  border-color: #c82333 !important;
+  box-shadow: none !important;
+}
+.btn-danger-outline.disabled,
+.btn-danger-outline:disabled {
+  color: #ffffff !important;
+  background-color: #e35e6b !important;
+  border-color: #e35e6b !important;
+}
+.btn-black-outline,
+.btn-black-outline:active {
+  background-color: transparent !important;
+  border-color: #232323;
+  color: #232323;
+}
+.btn-black-outline:hover,
+.btn-black-outline:focus,
+.btn-black-outline.focus,
+.btn-black-outline.active {
+  color: #000000 !important;
+  background-color: transparent !important;
+  border-color: #000000 !important;
+  box-shadow: none !important;
+}
+.btn-black-outline.disabled,
+.btn-black-outline:disabled {
+  color: #ffffff !important;
+  background-color: #232323 !important;
+  border-color: #232323 !important;
+}
+.btn-white-outline,
+.btn-white-outline:active {
+  background-color: transparent !important;
+  border-color: #fafafa;
+  color: #fafafa;
+}
+.btn-white-outline:hover,
+.btn-white-outline:focus,
+.btn-white-outline.focus,
+.btn-white-outline.active {
+  color: #cfcfcf !important;
+  background-color: transparent !important;
+  border-color: #cfcfcf !important;
+  box-shadow: none !important;
+}
+.btn-white-outline.disabled,
+.btn-white-outline:disabled {
+  color: #7a7a7a !important;
+  background-color: #fafafa !important;
+  border-color: #fafafa !important;
+}
+.text-primary {
+  color: #aac7ca !important;
+}
+.text-secondary {
+  color: #d68289 !important;
+}
+.text-success {
+  color: #60e1a5 !important;
+}
+.text-info {
+  color: #4cd9f5 !important;
+}
+.text-warning {
+  color: #ffd042 !important;
+}
+.text-danger {
+  color: #e35e6b !important;
+}
+.text-white {
+  color: #fafafa !important;
+}
+.text-black {
+  color: #232323 !important;
+}
+a.text-primary:hover,
+a.text-primary:focus,
+a.text-primary.active {
+  color: #6b9ea3 !important;
+}
+a.text-secondary:hover,
+a.text-secondary:focus,
+a.text-secondary.active {
+  color: #b63c46 !important;
+}
+a.text-success:hover,
+a.text-success:focus,
+a.text-success.active {
+  color: #23b873 !important;
+}
+a.text-info:hover,
+a.text-info:focus,
+a.text-info.active {
+  color: #0cafcf !important;
+}
+a.text-warning:hover,
+a.text-warning:focus,
+a.text-warning.active {
+  color: #dba500 !important;
+}
+a.text-danger:hover,
+a.text-danger:focus,
+a.text-danger.active {
+  color: #bb2030 !important;
+}
+a.text-white:hover,
+a.text-white:focus,
+a.text-white.active {
+  color: #c7c7c7 !important;
+}
+a.text-black:hover,
+a.text-black:focus,
+a.text-black.active {
+  color: #000000 !important;
+}
+a[class*="text-"]:not(.nav-link):not(.dropdown-item):not([role]):not(.navbar-caption) {
+  position: relative;
+  background-image: transparent;
+  background-size: 10000px 2px;
+  background-repeat: no-repeat;
+  background-position: 0px 1.2em;
+  background-position: -10000px 1.2em;
+}
+a[class*="text-"]:not(.nav-link):not(.dropdown-item):not([role]):not(.navbar-caption):hover {
+  transition: background-position 2s ease-in-out;
+  background-image: linear-gradient(currentColor 50%, currentColor 50%);
+  background-position: 0px 1.2em;
+}
+.nav-tabs .nav-link.active {
+  color: #aac7ca;
+}
+.nav-tabs .nav-link:not(.active) {
+  color: #232323;
+}
+.alert-success {
+  background-color: #70c770;
+}
+.alert-info {
+  background-color: #4cd9f5;
+}
+.alert-warning {
+  background-color: #ffd042;
+}
+.alert-danger {
+  background-color: #e35e6b;
+}
+.mbr-section-btn .btn:not(.btn-form) {
+  border-radius: 100px;
+}
+.mbr-gallery-filter li a {
+  border-radius: 100px !important;
+}
+.mbr-gallery-filter li.active .btn {
+  background-color: #aac7ca;
+  border-color: #aac7ca;
+  color: #ffffff;
+}
+.mbr-gallery-filter li.active .btn:focus {
+  box-shadow: none;
+}
+.nav-tabs .nav-link {
+  border-radius: 100px !important;
+}
+a,
+a:hover {
+  color: #aac7ca;
+}
+.mbr-plan-header.bg-primary .mbr-plan-subtitle,
+.mbr-plan-header.bg-primary .mbr-plan-price-desc {
+  color: #ffffff;
+}
+.mbr-plan-header.bg-success .mbr-plan-subtitle,
+.mbr-plan-header.bg-success .mbr-plan-price-desc {
+  color: #ffffff;
+}
+.mbr-plan-header.bg-info .mbr-plan-subtitle,
+.mbr-plan-header.bg-info .mbr-plan-price-desc {
+  color: #ffffff;
+}
+.mbr-plan-header.bg-warning .mbr-plan-subtitle,
+.mbr-plan-header.bg-warning .mbr-plan-price-desc {
+  color: #ffffff;
+}
+.mbr-plan-header.bg-danger .mbr-plan-subtitle,
+.mbr-plan-header.bg-danger .mbr-plan-price-desc {
+  color: #ffffff;
+}
+/* Scroll to top button*/
+.scrollToTop_wraper {
+  display: none;
+}
+.form-control {
+  font-family: 'Manrope', sans-serif;
+  font-size: 1.8rem;
+  line-height: 1.2;
+  font-weight: 400;
+  border-radius: 100px !important;
+}
+.form-control > .mbr-iconfont {
+  font-size: 2.25rem;
+}
+.form-control:hover,
+.form-control:focus {
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px 0px, rgba(0, 0, 0, 0.07) 0px 1px 3px 0px, rgba(0, 0, 0, 0.03) 0px 0px 0px 1px;
+  border-color: #aac7ca !important;
+}
+.form-control:-webkit-input-placeholder {
+  font-family: 'Manrope', sans-serif;
+  font-size: 1.8rem;
+  line-height: 1.2;
+  font-weight: 400;
+}
+.form-control:-webkit-input-placeholder > .mbr-iconfont {
+  font-size: 2.25rem;
+}
+blockquote {
+  border-color: #aac7ca;
+}
+/* Forms */
+.mbr-form .input-group-btn .btn {
+  border-radius: 100px !important;
+}
+.mbr-form .input-group-btn .btn:hover {
+  box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.2);
+}
+.mbr-form .input-group-btn button[type="submit"] {
+  border-radius: 100px !important;
+  padding: 1rem 3rem;
+}
+.mbr-form .input-group-btn button[type="submit"]:hover {
+  box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.2);
+}
+.jq-selectbox li:hover,
+.jq-selectbox li.selected {
+  background-color: #aac7ca;
+  color: #ffffff;
+}
+.jq-number__spin {
+  transition: 0.25s ease;
+}
+.jq-number__spin:hover {
+  border-color: #aac7ca;
+}
+.jq-selectbox .jq-selectbox__trigger-arrow,
+.jq-number__spin.minus:after,
+.jq-number__spin.plus:after {
+  transition: 0.4s;
+  border-top-color: #232323;
+  border-bottom-color: #232323;
+}
+.jq-selectbox:hover .jq-selectbox__trigger-arrow,
+.jq-number__spin.minus:hover:after,
+.jq-number__spin.plus:hover:after {
+  border-top-color: #aac7ca;
+  border-bottom-color: #aac7ca;
+}
+.xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_default,
+.xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_current,
+.xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box > div > div.xdsoft_current {
+  color: #000000 !important;
+  background-color: #aac7ca !important;
+  box-shadow: none !important;
+}
+.xdsoft_datetimepicker .xdsoft_calendar td:hover,
+.xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box > div > div:hover {
+  color: #000000 !important;
+  background: #d68289 !important;
+  box-shadow: none !important;
+}
+.lazy-bg {
+  background-image: none !important;
+}
+.lazy-placeholder:not(section),
+.lazy-none {
+  display: block;
+  position: relative;
+  padding-bottom: 56.25%;
+  width: 100%;
+  height: auto;
+}
+iframe.lazy-placeholder,
+.lazy-placeholder:after {
+  content: '';
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: transparent no-repeat center;
+  background-size: contain;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='32' height='32' viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg' stroke='%23aac7ca' %3e%3cg fill='none' fill-rule='evenodd'%3e%3cg transform='translate(16 16)' stroke-width='2'%3e%3ccircle stroke-opacity='.5' cx='16' cy='16' r='16'/%3e%3cpath d='M32 16c0-9.94-8.06-16-16-16'%3e%3canimateTransform attributeName='transform' type='rotate' from='0 16 16' to='360 16 16' dur='1s' repeatCount='indefinite'/%3e%3c/path%3e%3c/g%3e%3c/g%3e%3c/svg%3e");
+}
+section.lazy-placeholder:after {
+  opacity: 0.5;
+}
+body {
+  overflow-x: hidden;
+}
+a {
+  transition: color 0.6s;
+}
+.mbr-section-btn .btn,
+.mbr-section-btn-main .btn {
+  padding: 15px 90px;
+  border-radius: 8px !important;
+  border-width: 1px !important;
+  font-weight: 700 !important;
+}
+@media (max-width: 992px) {
+  .mbr-section-btn .btn,
+  .mbr-section-btn-main .btn {
+    padding: 15px 22px;
+  }
+}
+.mbr-section-btn .btn .btn-primary,
+.mbr-section-btn-main .btn .btn-primary,
+.mbr-section-btn .btn .btn-secondary,
+.mbr-section-btn-main .btn .btn-secondary,
+.mbr-section-btn .btn .btn-success,
+.mbr-section-btn-main .btn .btn-success,
+.mbr-section-btn .btn .btn-info,
+.mbr-section-btn-main .btn .btn-info,
+.mbr-section-btn .btn .btn-warning,
+.mbr-section-btn-main .btn .btn-warning,
+.mbr-section-btn .btn .btn-danger,
+.mbr-section-btn-main .btn .btn-danger,
+.mbr-section-btn .btn .btn-black,
+.mbr-section-btn-main .btn .btn-black,
+.mbr-section-btn .btn .btn-white,
+.mbr-section-btn-main .btn .btn-white {
+  border: none !important;
+}
+img,
+.card-wrap,
+.card-wrapper,
+.video-wrapper,
+.mbr-figure iframe,
+.slide-content,
+.plan,
+.card,
+.item-wrapper,
+.item-img,
+.item-content {
+  border-radius: 10px !important;
+}
+.tag-wrap {
+  border-radius: 8px;
+}
+.tag-wrapper {
+  border-radius: 30px;
+}
+.soc-item {
+  border-radius: 8px;
+}
+.soc-item .mbr-iconfont {
+  border-radius: 8px;
+}
+.slide-content .item-wrapper .item-img {
+  border-radius: 10px;
+}
+.content-wrapper {
+  border-radius: 20px;
+}
+.content-wrapper img {
+  border-radius: 20px !important;
+}
+.google-map iframe {
+  border-radius: 20px;
+}
+.card-mini {
+  border-radius: 30px !important;
+}
+.title-wrap .item-title {
+  border-radius: 15rem;
+}
+.nav.nav-tabs .nav-link {
+  border-radius: 30px !important;
+}
+.form-control {
+  border-radius: 8px !important;
+}
+</style><script async="" id="www-widgetapi-script" src="./www-widgetapi.js.download" type="text/javascript"></script><script src="./core-summernote-dropdown-menu-bs-5.js.download"></script><script src="./core-accordion-bootstrap.js.download"></script><script src="./core-toggle-bootstrap.js.download"></script><script src="./core-after-navbar.js.download"></script><script src="./core-auto-paddings.js.download"></script><script src="./core-menu-styles.js.download"></script><script src="./core-gallery.js.download"></script><script src="./core-testimonials.js.download"></script><script src="./core-slider-mobirise.js.download"></script><script src="./core-dropdown.js.download"></script><script src="./bootstrap.bundle.min.js.download"></script><script src="./typed.js.download"></script><script src="./jarallax.js.download"></script><script src="./navbar-dropdown.js.download"></script><script src="./player.js.download"></script><script src="./countdown.js.download"></script><script src="./social-likes.js.download"></script><script src="./smooth-scroll.js.download"></script><script src="./mbr-clients-slider.js.download"></script><script src="./mbr-tabs.js.download"></script><script src="./mbr-popup-btns.js.download"></script><script src="./mbr-switch-arrow.js.download"></script><script src="./script.js.download"></script><script src="./masonry.pkgd.min.js.download"></script><script src="./imagesloaded.pkgd.min.js.download"></script><script src="./vimeo_player.js.download"></script><script src="./vanilla-dataTables.min.js.download"></script><script src="./index(1).js.download"></script><script src="./as-pie-progress.min.js.download"></script><script src="./embla.min.js.download"></script><script src="./script(1).js.download"></script><script src="./viewportchecker.js.download"></script><script src="./scroll-gallery.js.download"></script><script src="./script(2).js.download"></script><script src="./formoid.min.js.download"></script><script src="./player.min.js.download"></script><script src="./script(3).js.download"></script><script src="./script(4).js.download"></script><script src="./core.js.download"></script><script src="./script(5).js.download"></script><script src="./wowslider.js.download"></script><script src="./script(6).js.download"></script><script src="./script(7).js.download"></script><script src="./script(8).js.download"></script><script src="./script(9).js.download"></script><script src="./script(10).js.download"></script><script src="./script(11).js.download"></script><script src="./script(12).js.download"></script><link href="./css2(1)" rel="stylesheet"/><script async="" src="./iframe_api"></script></head>
+<body class="desktop dark-mode rounded-canvas" data-new-gr-c-s-loaded="14.1107.0" style="overflow-x: hidden;">
+<!-- Strange hack for hardware acceleration (bug with links dialogs) -->
+<div style="-webkit-transform: translate3d(0,0,0); transform: translate3d(0,0,0);"></div>
+<div class="template clearfix">
+<div class="ui-sortable"><div class="app-component no-sortable pos-absolute" data-app-always-top="true" data-app-component-id="29"><div class="app-component-menu"><div class="app-component-edit"><span class="mbr-btn component-code mbr-icon-code hidden-interface tooltipstered" data-tooltipster="bottom"></span><span class="mbr-btn component-params mbr-icon-cog tooltipstered" data-tooltipster="bottom"></span><span class="mbr-btn component-remove mbr-icon-trash hidden-interface tooltipstered" data-tooltipster="bottom"></span><span class="mbr-btn component-show-more mbr-icon-horizontal-ellipsis tooltipstered" data-tooltipster="bottom"></span></div></div><div class="app-component-content"><section class="menu menu01 tradem5 cid-uFcLNCY259" data-bs-version="5.1" data-rv-view="87" id="menu-1-uFcLNCY259" mbr-id="_anchor" once="menu">
+<div class="container" mbr-class2="this | fakeFilter uname__12 _params.fullWidth _params.fullWidth">
+<nav class="navbar navbar-dropdown navbar-expand-lg" mbr-class2="this | fakeFilter uname__13 _params.sticky _params.collapsed _params.collapsed">
+<div class="menu-container">
+<div class="navbar-brand">
+<span class="navbar-logo" mbr-if="this | fakeFilter uname__14 _params.showLogo">
+<a href="../home/index.html">
+<img alt="Mobirise Website Builder" mbr-media="uname__16" mbr-media-simple="true" mbr-on-click="uname__17" mbr-style2="this | fakeFilter uname__15 _params.logoSize" media-simple="true" src="./background1.jpg" style="height: 1.4rem;"/>
+</a>
+</span>
+<span class="navbar-caption-wrap" data-app-edit="buttons" data-class-var="display-7" data-toolbar="-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove,-iconFont" mbr-buttons="uname__21" mbr-class-var="uname__22" mbr-content-edit="uname__19" mbr-if="this | fakeFilter uname__18 _params.showBrand" mbr-on-change-component-node="uname__20" mbr-on-change-theme-style="uname__23" mbr-static-html="uname__19"><a class="navbar-caption display-7" data-app-btn="true" data-app-placeholder="Type Text" data-app-selector=".navbar-caption" data-toolbar="-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove,-iconFont" href="/Esha Hub Website/final/home/index.html">ESHA</a></span>
+</div>
+<button aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse" data-target="#navbarSupportedContent" data-toggle="collapse" mbr-if="this | fakeFilter uname__24 _params.showItems _params.showIcons _params.showButtons" type="button">
+<div class="hamburger">
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+</div>
+</button>
+<div class="collapse navbar-collapse" id="navbarSupportedContent" mbr-if="this | fakeFilter uname__25 _params.showItems _params.showIcons _params.showButtons">
+<ul class="navbar-nav nav-dropdown" data-app-edit="menu" data-app-modern-menu="true" data-class-var="display-4" mbr-class-var="uname__29" mbr-class2="this | fakeFilter uname__32 _params.showButtons _params.isPublish _params.showBrand _params.showLogo" mbr-content-edit="uname__26" mbr-if="this | fakeFilter uname__31 _params.showItems" mbr-menu="uname__28" mbr-on-change-component-node="uname__27" mbr-on-change-theme-style="uname__30" mbr-static-html="uname__26"><li class="nav-item">
+<a class="nav-link link display-4" data-app-btn="true" data-app-placeholder="Type Text" data-app-selector=".nav-link,.dropdown-item" href="/Esha Hub Website/Research Hub_files/Research Hub.html">Research Hub</a>
+</li>
+<li class="nav-item">
+<a aria-expanded="false" class="nav-link link display-4" data-app-btn="true" data-app-placeholder="Type Text" data-app-selector=".nav-link,.dropdown-item" href="/Esha Hub Website/Innovation Zone_files/innovation.html">Innovation Zone</a>
+</li>
+<li class="nav-item">
+<a class="nav-link link display-4" data-app-btn="true" data-app-placeholder="Type Text" data-app-selector=".nav-link,.dropdown-item" href="/Esha Hub Website/Magic Mentorship page/Magic Mentorship.html">Mentorship Magic</a>
+</li>
+<li class="nav-item">
+<a class="nav-link link display-4" data-app-btn="true" data-app-placeholder="Type Text" data-app-selector=".nav-link,.dropdown-item" href="/Esha Hub Website/esha hub About/About.html">About</a>
+</li>
+</ul>
+<div class="icons-menu" data-app-remove-it="true" mbr-if="this | fakeFilter uname__33 _params.showIcons" style="display: none;">
+<a class="iconfont-wrapper" href="#">
+<span class="p-2 mbr-iconfont mobi-mbri-globe-2 mobi-mbri" mbr-media="uname__34" mbr-media-simple="true" mbr-on-click="uname__35" media-simple="true"></span>
+</a>
+<a class="iconfont-wrapper" href="#" mbr-if="this | fakeFilter uname__36 _params.iconsAmount">
+<span class="p-2 mbr-iconfont socicon-instagram socicon" mbr-media="uname__37" mbr-media-simple="true" mbr-on-click="uname__38" media-simple="true"></span>
+</a>
+<a class="iconfont-wrapper" data-app-remove-it="true" href="#" mbr-if="this | fakeFilter uname__39 _params.iconsAmount" style="display: none;">
+<span class="p-2 mbr-iconfont mobi-mbri-map-pin mobi-mbri" mbr-media="uname__40" mbr-media-simple="true" mbr-on-click="uname__41" media-simple="true"></span>
+</a>
+<a class="iconfont-wrapper" data-app-remove-it="true" href="#" mbr-if="this | fakeFilter uname__42 _params.iconsAmount" style="display: none;">
+<span class="p-2 mbr-iconfont mobi-mbri-shopping-cart mobi-mbri" mbr-media="uname__43" mbr-media-simple="true" mbr-on-click="uname__44" media-simple="true"></span>
+</a>
+</div>
+<div class="navbar-buttons mbr-section-btn" data-app-edit="buttons" data-class-var="display-4" mbr-buttons="uname__48" mbr-class-var="uname__49" mbr-content-edit="uname__46" mbr-if="this | fakeFilter uname__45 _params.showButtons" mbr-on-change-component-node="uname__47" mbr-on-change-theme-style="uname__50" mbr-static-html="uname__46"><a class="btn btn-primary display-4" data-app-btn="true" data-app-placeholder="Type Text" href="/Esha Hub Website/join page test/join page.html">Join Us</a></div>
+</div>
+</div>
+</nav>
+</div>
+</section></div><style>.cid-uFcLNCY259 {
+  z-index: 1000;
+  width: 100%;
+  position: relative;
+}
+.cid-uFcLNCY259 .dropdown-item:before {
+  font-family: Moririse2 !important;
+  content: "\e966";
+  display: inline-block;
+  width: 0;
+  position: absolute;
+  left: 1rem;
+  top: 0.5rem;
+  margin-right: 0.5rem;
+  line-height: 1;
+  font-size: inherit;
+  vertical-align: middle;
+  text-align: center;
+  overflow: hidden;
+  transform: scale(0, 1);
+  transition: all 0.25s ease-in-out;
+}
+@media (max-width: 767px) {
+  .cid-uFcLNCY259 .navbar-toggler {
+    transform: scale(0.8);
+  }
+}
+.cid-uFcLNCY259 .navbar-brand {
+  flex-shrink: 0;
+  align-items: center;
+  margin-right: 0;
+  padding: 10px 0;
+  transition: all 0.3s;
+  word-break: break-word;
+  z-index: 1;
+}
+.cid-uFcLNCY259 .navbar-brand img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 8px !important;
+}
+.cid-uFcLNCY259 .navbar-brand .navbar-caption {
+  line-height: inherit !important;
+}
+.cid-uFcLNCY259 .navbar-brand .navbar-logo a {
+  outline: none;
+}
+.cid-uFcLNCY259 .navbar-nav {
+  margin: auto;
+  margin-left: 0;
+  margin-left: auto;
+  margin-right: 0;
+}
+.cid-uFcLNCY259 .navbar-nav .nav-item {
+  padding: 0 !important;
+  transition: 0.3s all !important;
+}
+.cid-uFcLNCY259 .navbar-nav .nav-item .nav-link {
+  padding: 16px 28px !important;
+  margin: 0 !important;
+  border-radius: 1rem !important;
+  transition: 0.3s all !important;
+}
+@media (max-width: 1200px) {
+  .cid-uFcLNCY259 .navbar-nav .nav-item .nav-link {
+    padding: 16px !important;
+  }
+}
+.cid-uFcLNCY259 .navbar-nav .nav-item .nav-link:hover {
+  background-color: transparent;
+}
+.cid-uFcLNCY259 .navbar-nav .open .nav-link::after {
+  transform: rotate(180deg);
+}
+.cid-uFcLNCY259 .navbar-nav .dropdown-item {
+  padding: 12px !important;
+  border-radius: 0.5rem !important;
+  margin: 0 8px !important;
+  transition: 0.3s all !important;
+}
+.cid-uFcLNCY259 .navbar-nav .dropdown-item:hover {
+  background-color: rgba(27, 31, 10, 0.06);
+}
+@media (min-width: 992px) {
+  .cid-uFcLNCY259 .navbar-nav {
+    padding-left: 1.5rem;
+  }
+}
+.cid-uFcLNCY259 .nav-link {
+  width: fit-content;
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-weight: 400 !important;
+}
+.cid-uFcLNCY259 .nav-link:hover {
+  color: #ffffff !important;
+}
+.cid-uFcLNCY259 .navbar-logo {
+  padding-right: 0;
+  margin: 0 !important;
+}
+@media (max-width: 767px) {
+  .cid-uFcLNCY259 .navbar-logo {
+    padding-left: 1rem;
+  }
+}
+.cid-uFcLNCY259 .navbar-caption {
+  padding-left: 1rem;
+  padding-right: 0.5rem;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+.cid-uFcLNCY259 .navbar-caption:hover,
+.cid-uFcLNCY259 .navbar-caption:focus {
+  color: #ffffff !important;
+}
+@media (max-width: 767px) {
+  .cid-uFcLNCY259 .nav-dropdown {
+    padding-bottom: 0.5rem;
+  }
+}
+.cid-uFcLNCY259 .nav-dropdown .link.dropdown-toggle::after {
+  margin-left: 0.5rem;
+  margin-top: 0.2rem;
+  transition: 0.3s all;
+}
+.cid-uFcLNCY259 .menu-container {
+  width: 100%;
+  display: flex;
+  min-height: 90px;
+  padding: 16px 24px;
+  flex-wrap: nowrap;
+  left: 0;
+  right: 0;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: flex-end;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 10px;
+  margin: 1rem 16px 0;
+  background-color: #00180d;
+  box-shadow: none;
+  position: relative;
+  border: 1px solid #aac7ca;
+}
+@media (max-width: 992px) {
+  .cid-uFcLNCY259 .menu-container {
+    padding: 16px;
+  }
+}
+@media (max-width: 1200px) {
+  .cid-uFcLNCY259 .menu-container {
+    margin: 1rem 16px 0;
+  }
+}
+@media (max-width: 991px) {
+  .cid-uFcLNCY259 .menu-container {
+    margin: 16px;
+  }
+}
+.cid-uFcLNCY259 .iconfont-wrapper {
+  color: #ffffff !important;
+  font-size: 1.5rem;
+  padding-right: 0.5rem;
+  transition: all 0.3s ease-in-out;
+  opacity: 0.6;
+}
+.cid-uFcLNCY259 .iconfont-wrapper:hover,
+.cid-uFcLNCY259 .iconfont-wrapper:focus {
+  opacity: 1;
+}
+.cid-uFcLNCY259 .dropdown-menu {
+  flex-wrap: wrap;
+  flex-direction: column;
+  max-width: 100%;
+  padding: 12px 4px !important;
+  border-radius: 1.5rem;
+  transition: 0.3s all !important;
+  min-width: auto;
+  background: #00180d;
+}
+.cid-uFcLNCY259 .nav-item:focus,
+.cid-uFcLNCY259 .nav-link:focus {
+  outline: none;
+}
+.cid-uFcLNCY259 .dropdown .dropdown-menu .dropdown-item {
+  width: auto;
+  transition: all 0.25s ease-in-out;
+}
+.cid-uFcLNCY259 .dropdown .dropdown-menu .dropdown-item::after {
+  right: 0.5rem;
+}
+.cid-uFcLNCY259 .dropdown .dropdown-menu .dropdown-item .mbr-iconfont {
+  margin-right: 0.5rem;
+  vertical-align: sub;
+}
+.cid-uFcLNCY259 .dropdown .dropdown-menu .dropdown-item .mbr-iconfont:before {
+  display: inline-block;
+  transform: scale(1, 1);
+  transition: all 0.25s ease-in-out;
+}
+.cid-uFcLNCY259 .collapsed .dropdown-menu .dropdown-item:before {
+  display: none;
+}
+.cid-uFcLNCY259 .collapsed .dropdown .dropdown-menu .dropdown-item {
+  padding: 0.235em 1.5em 0.235em 1.5em !important;
+  transition: none;
+  margin: 0 !important;
+}
+.cid-uFcLNCY259 .navbar {
+  min-height: 90px;
+  transition: all 0.3s;
+  border-bottom: 1px solid transparent;
+  background: transparent !important;
+  padding: 0 !important;
+  border: none !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+}
+.cid-uFcLNCY259 .navbar.opened {
+  transition: all 0.3s;
+}
+.cid-uFcLNCY259 .navbar .dropdown-item {
+  padding: 0.5rem 1.8rem;
+}
+.cid-uFcLNCY259 .navbar .navbar-logo img {
+  width: auto;
+}
+.cid-uFcLNCY259 .navbar .navbar-collapse {
+  z-index: 1;
+  justify-content: flex-end;
+}
+@media (max-width: 992px) {
+  .cid-uFcLNCY259 .navbar .navbar-collapse {
+    position: absolute;
+  }
+}
+.cid-uFcLNCY259 .navbar.collapsed {
+  justify-content: center;
+}
+.cid-uFcLNCY259 .navbar.collapsed .nav-item .nav-link::before {
+  display: none;
+}
+.cid-uFcLNCY259 .navbar.collapsed.opened .dropdown-menu {
+  top: 0;
+}
+@media (min-width: 992px) {
+  .cid-uFcLNCY259 .navbar.collapsed.opened:not(.navbar-short) .navbar-collapse {
+    max-height: calc(98.5vh - 1.4rem);
+  }
+}
+.cid-uFcLNCY259 .navbar.collapsed .dropdown-menu .dropdown-submenu {
+  left: 0 !important;
+}
+.cid-uFcLNCY259 .navbar.collapsed .dropdown-menu .dropdown-item:after {
+  right: auto;
+}
+.cid-uFcLNCY259 .navbar.collapsed .dropdown-menu .dropdown-toggle[data-toggle="dropdown-submenu"]:after {
+  margin-left: 0.5rem;
+  margin-top: 0.2rem;
+  border-top: 0.35em solid;
+  border-right: 0.35em solid transparent;
+  border-left: 0.35em solid transparent;
+  border-bottom: 0;
+  top: 41%;
+}
+.cid-uFcLNCY259 .navbar.collapsed ul.navbar-nav li {
+  margin: auto;
+}
+.cid-uFcLNCY259 .navbar.collapsed .dropdown-menu .dropdown-item {
+  padding: 0.25rem 1.5rem;
+  text-align: center;
+}
+.cid-uFcLNCY259 .navbar.collapsed .icons-menu {
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+@media (max-width: 767px) {
+  .cid-uFcLNCY259 .navbar {
+    min-height: 72px;
+  }
+  .cid-uFcLNCY259 .navbar .navbar-logo img {
+    height: 2rem !important;
+  }
+}
+@media (max-width: 991px) {
+  .cid-uFcLNCY259 .navbar .nav-item .nav-link::before {
+    display: none;
+  }
+  .cid-uFcLNCY259 .navbar.opened .dropdown-menu {
+    top: 0;
+  }
+  .cid-uFcLNCY259 .navbar .dropdown-menu .dropdown-submenu {
+    left: 0 !important;
+  }
+  .cid-uFcLNCY259 .navbar .dropdown-menu .dropdown-item:after {
+    right: auto;
+  }
+  .cid-uFcLNCY259 .navbar .dropdown-menu .dropdown-toggle[data-toggle="dropdown-submenu"]:after {
+    margin-left: 0.5rem;
+    margin-top: 0.2rem;
+    border-top: 0.35em solid;
+    border-right: 0.35em solid transparent;
+    border-left: 0.35em solid transparent;
+    border-bottom: 0;
+    top: 40%;
+  }
+  .cid-uFcLNCY259 .navbar .dropdown-menu .dropdown-item {
+    padding: 0.25rem 1.5rem !important;
+    text-align: center;
+  }
+  .cid-uFcLNCY259 .navbar .navbar-brand {
+    flex-shrink: initial;
+    flex-basis: auto;
+    word-break: break-word;
+    padding-right: 10px;
+  }
+  .cid-uFcLNCY259 .navbar .navbar-toggler {
+    flex-basis: auto;
+  }
+  .cid-uFcLNCY259 .navbar .icons-menu {
+    padding-left: 0;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+}
+.cid-uFcLNCY259 .navbar.navbar-short .navbar-logo img {
+  height: 2rem;
+}
+.cid-uFcLNCY259 .dropdown-item.active,
+.cid-uFcLNCY259 .dropdown-item:active {
+  background-color: transparent;
+}
+.cid-uFcLNCY259 .navbar-expand-lg .navbar-nav .nav-link {
+  padding: 0;
+}
+.cid-uFcLNCY259 .nav-dropdown .link.dropdown-toggle {
+  margin-right: 1.667em;
+}
+.cid-uFcLNCY259 .nav-dropdown .link.dropdown-toggle[aria-expanded="true"] {
+  margin-right: 0;
+  padding: 0.667em 1.667em;
+}
+.cid-uFcLNCY259 .navbar.navbar-expand-lg .dropdown .dropdown-menu {
+  background: #00180d;
+}
+.cid-uFcLNCY259 .navbar.navbar-expand-lg .dropdown .dropdown-menu .dropdown-submenu {
+  margin: 0;
+  left: 105%;
+  transform: none;
+  top: -12px;
+}
+.cid-uFcLNCY259 .navbar .dropdown.open > .dropdown-menu {
+  display: flex;
+}
+.cid-uFcLNCY259 ul.navbar-nav {
+  flex-wrap: wrap;
+}
+.cid-uFcLNCY259 .navbar-buttons {
+  text-align: center;
+  min-width: 140px;
+}
+@media (max-width: 992px) {
+  .cid-uFcLNCY259 .navbar-buttons {
+    text-align: left;
+  }
+}
+.cid-uFcLNCY259 button.navbar-toggler {
+  outline: none;
+  width: 31px;
+  height: 20px;
+  cursor: pointer;
+  transition: all 0.2s;
+  position: relative;
+  align-self: center;
+}
+.cid-uFcLNCY259 button.navbar-toggler .hamburger span {
+  position: absolute;
+  right: 0;
+  width: 30px;
+  height: 2px;
+  border-right: 5px;
+  background-color: #ffffff;
+}
+.cid-uFcLNCY259 button.navbar-toggler .hamburger span:nth-child(1) {
+  top: 0;
+  transition: all 0.2s;
+}
+.cid-uFcLNCY259 button.navbar-toggler .hamburger span:nth-child(2) {
+  top: 8px;
+  transition: all 0.15s;
+}
+.cid-uFcLNCY259 button.navbar-toggler .hamburger span:nth-child(3) {
+  top: 8px;
+  transition: all 0.15s;
+}
+.cid-uFcLNCY259 button.navbar-toggler .hamburger span:nth-child(4) {
+  top: 16px;
+  transition: all 0.2s;
+}
+.cid-uFcLNCY259 nav.opened .hamburger span:nth-child(1) {
+  top: 8px;
+  width: 0;
+  opacity: 0;
+  right: 50%;
+  transition: all 0.2s;
+}
+.cid-uFcLNCY259 nav.opened .hamburger span:nth-child(2) {
+  transform: rotate(45deg);
+  transition: all 0.25s;
+}
+.cid-uFcLNCY259 nav.opened .hamburger span:nth-child(3) {
+  transform: rotate(-45deg);
+  transition: all 0.25s;
+}
+.cid-uFcLNCY259 nav.opened .hamburger span:nth-child(4) {
+  top: 8px;
+  width: 0;
+  opacity: 0;
+  right: 50%;
+  transition: all 0.2s;
+}
+.cid-uFcLNCY259 .navbar-dropdown {
+  padding: 0 1rem;
+}
+.cid-uFcLNCY259 a.nav-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cid-uFcLNCY259 .icons-menu {
+  flex-wrap: nowrap;
+  display: flex;
+  justify-content: center;
+  padding-left: 1rem;
+  padding-right: 0;
+  padding-top: 0.3rem;
+  text-align: center;
+}
+@media (max-width: 992px) {
+  .cid-uFcLNCY259 .icons-menu {
+    justify-content: flex-start;
+    margin-bottom: 0.5rem;
+  }
+}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .cid-uFcLNCY259 .navbar {
+    height: 70px;
+  }
+  .cid-uFcLNCY259 .navbar.opened {
+    height: auto;
+  }
+  .cid-uFcLNCY259 .nav-item .nav-link:hover::before {
+    width: 175%;
+    max-width: calc(100% + 2rem);
+    left: -1rem;
+  }
+}
+.cid-uFcLNCY259 .navbar .dropdown > .dropdown-menu {
+  display: none;
+  width: max-content;
+  max-width: 500px !important;
+  transform: translateX(-50%);
+  top: calc(100% + 20px);
+  left: 50%;
+}
+.cid-uFcLNCY259 .navbar .dropdown > .dropdown-menu .dropdown-item {
+  line-height: 1 !important;
+}
+.cid-uFcLNCY259 .navbar .dropdown > .dropdown-menu .dropdown .dropdown-item {
+  align-items: center;
+  display: flex;
+  height: max-content !important;
+  min-height: max-content !important;
+}
+.cid-uFcLNCY259 .navbar .dropdown > .dropdown-menu .dropdown .dropdown-item::after {
+  display: inline-block;
+  position: static;
+  margin-left: 0.5rem;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  transition: 0.3s all;
+  transform: rotate(-90deg);
+}
+.cid-uFcLNCY259 .navbar .dropdown > .dropdown-menu .dropdown.open .dropdown-item::after {
+  transform: rotate(0deg);
+}
+.cid-uFcLNCY259 .mbr-section-btn {
+  margin: -0.6rem -0.6rem;
+  width: auto;
+  padding-left: 2rem;
+}
+@media (max-width: 1200px) {
+  .cid-uFcLNCY259 .mbr-section-btn {
+    padding-left: 2rem;
+  }
+}
+@media (max-width: 992px) {
+  .cid-uFcLNCY259 .mbr-section-btn {
+    padding-left: 0;
+  }
+}
+.cid-uFcLNCY259 .mbr-section-btn .btn {
+  justify-content: center;
+  width: auto !important;
+  min-width: 180px;
+  padding: 12px 24px;
+}
+.cid-uFcLNCY259 .navbar-toggler {
+  margin-left: 12px;
+  margin-right: 8px;
+  order: 1000;
+}
+@media (max-width: 991px) {
+  .cid-uFcLNCY259 .navbar-brand {
+    margin-right: auto;
+  }
+  .cid-uFcLNCY259 .navbar-collapse {
+    z-index: -1 !important;
+    position: absolute;
+    top: 110%;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    background: #00180d;
+  }
+  .cid-uFcLNCY259 .navbar-nav .nav-item .nav-link::after {
+    margin-left: 10px;
+  }
+  .cid-uFcLNCY259 .navbar-nav .dropdown-item:hover {
+    background-color: rgba(27, 31, 10, 0.06);
+  }
+  .cid-uFcLNCY259 .navbar .dropdown > .dropdown-menu {
+    max-width: 100% !important;
+    transform: translateX(0);
+    top: 10px;
+    left: 0;
+    padding: 8px !important;
+    border-radius: 1rem;
+    background-color: rgba(27, 31, 10, 0.04) !important;
+  }
+  .cid-uFcLNCY259 .navbar .dropdown > .dropdown-menu .dropdown-item {
+    padding: 8px !important;
+    line-height: 1 !important;
+    margin-bottom: 4px !important;
+  }
+  .cid-uFcLNCY259 .navbar .dropdown > .dropdown-menu .dropdown .dropdown-item {
+    align-items: center;
+    display: flex;
+    height: max-content !important;
+    min-height: max-content !important;
+  }
+  .cid-uFcLNCY259 .navbar .dropdown > .dropdown-menu .dropdown .dropdown-item::after {
+    display: inline-block;
+    position: static;
+    margin-left: 0.5rem;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    transition: 0.3s all;
+    transform: rotate(0deg);
+  }
+  .cid-uFcLNCY259 .navbar .dropdown > .dropdown-menu .dropdown.open .dropdown-item::after {
+    transform: rotate(180deg);
+  }
+  .cid-uFcLNCY259 .navbar .dropdown > .dropdown-menu .dropdown-submenu {
+    position: static;
+    width: 100%;
+    max-width: 100% !important;
+    transform: translateX(0) !important;
+    top: 0;
+    left: 0;
+    padding: 8px !important;
+    border-radius: 1rem;
+    background-color: rgba(27, 31, 10, 0.04) !important;
+  }
+  .cid-uFcLNCY259 .navbar .dropdown.open > .dropdown-menu {
+    display: flex !important;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+@media (max-width: 575px) {
+  .cid-uFcLNCY259 .navbar-collapse {
+    padding: 1rem;
+  }
+}
+.cid-uFcLNCY259 .navbar-brand,
+.cid-uFcLNCY259 .navbar-toggler,
+.cid-uFcLNCY259 .navbar-collapse {
+  position: relative;
+  z-index: 1;
+}
+.cid-uFcLNCY259 .nav-link,
+.cid-uFcLNCY259 .dropdown-item {
+  color: #FFFFFF;
+}
+</style></div><div class="app-component" data-app-component-id="30"><div class="app-component-menu"><div class="app-component-edit"><span class="mbr-btn sortable mbr-icon-arrows-vertical hidden-interface tooltipstered" data-tooltipster="bottom"></span><span class="mbr-btn component-clone mbr-icon-copy hidden-interface tooltipstered" data-tooltipster="bottom"></span><span class="mbr-btn component-code mbr-icon-code hidden-interface tooltipstered" data-tooltipster="bottom"></span><span class="mbr-btn component-params mbr-icon-cog tooltipstered" data-tooltipster="bottom"></span><span class="mbr-btn component-remove mbr-icon-trash hidden-interface tooltipstered" data-tooltipster="bottom"></span><span class="mbr-btn component-show-more mbr-icon-horizontal-ellipsis tooltipstered" data-tooltipster="bottom"></span></div></div><div class="app-component-content"><section class="header02 tradem5 cid-uFdFQcoh7E mbr-parallax-background" data-bs-version="5.1" data-rv-view="89" id="hero-2-uFdFQcoh7E" mbr-class2="this | fakeFilter uname__2 _params.fullScreen _params.bg.parallax" mbr-data-bg-video="this | fakeFilter uname__1 _params.bg.type _params.bg.value.url | toNULL" mbr-id="_anchor" style="z-index: 0; background-image: none; position: relative;">
+<div class="mbr-fallback-image disabled" data-app-remove-it="true" mbr-if="this | fakeFilter uname__27 _params.bg.type" style="display: none;"></div>
+<div class="mbr-overlay" mbr-bg-color="this | fakeFilter uname__30 _params.overlayColor | toNULL" mbr-if="this | fakeFilter uname__28 _params.overlay _params.bg.type" mbr-opacity="this | fakeFilter uname__29 _params.overlayOpacity | toNULL" style="opacity: 0.8; background-color: rgb(23, 18, 0);"></div>
+<div class="container" mbr-class2="this | fakeFilter uname__31 _params.fullWidth _params.fullWidth">
+<div class="row items-wrap">
+<div class="col-12 card">
+<div class="content-wrapper">
+<div class="image-wrapper">
+<img alt="Mobirise" mbr-media="uname__32" mbr-media-simple="true" mbr-on-click="uname__33" media-simple="true" src="./photo-1461088945293-0c17689e48ac.jpeg"/>
+</div>
+<h2 class="mbr-section-title mbr-fonts-style display-1" data-app-edit="content" data-app-placeholder="Type Text" data-app-selector=".mbr-section-title, .mbr-section-btn" data-class-var="display-1" mbr-class-var="uname__34" mbr-content-edit="uname__37" mbr-if="this | fakeFilter uname__36 _params.showTitle" mbr-on-change-component-node="uname__38" mbr-on-change-theme-style="uname__35" mbr-static-html="uname__37">Innovate Together</h2>
+<div class="text-wrapper">
+<p class="mbr-text mbr-fonts-style display-4" data-app-edit="content" data-app-placeholder="Type Text" data-app-selector=".mbr-text, .text-wrapper" data-class-var="display-4" mbr-class-var="uname__39" mbr-content-edit="uname__42" mbr-if="this | fakeFilter uname__41 _params.showText" mbr-on-change-component-node="uname__43" mbr-on-change-theme-style="uname__40" mbr-static-html="uname__42">Join a vibrant community where ideas collide and creativity flourishes. Engage with brilliant minds, tackle challenges, and make your mark in the tech world. Don't just watch the future unfold, be a part of it!</p>
+</div>
+<div class="mbr-section-btn" data-app-edit="buttons" data-class-var="display-4" data-toolbar="-mbrBtnMove" mbr-buttons="uname__46" mbr-class-var="uname__47" mbr-content-edit="uname__44" mbr-if="this | fakeFilter uname__49 _params.showButtons" mbr-on-change-component-node="uname__45" mbr-on-change-theme-style="uname__48" mbr-static-html="uname__44">
+<a class="btn btn-primary display-4" data-app-btn="true" data-app-placeholder="Type Text" href="/Esha Hub Website/esha hub About/About.html">Get Started</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="jarallax-container-12" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; overflow: hidden; z-index: -100;"><div style='background-position: 50% 50%; background-size: cover; background-repeat: no-repeat; background-image: url("https://r.mobirisesite.com/1287648/assets/images/photo-1611223235982-891064f27716.jpeg"); position: absolute; top: 0px; left: 0px; width: 1829px; height: 960.234px; overflow: hidden; pointer-events: none; transform-style: preserve-3d; backface-visibility: hidden; will-change: transform, opacity; margin-top: -48.1172px; transform: translate3d(0px, 34.5172px, 0px);'></div></div></section></div><style>.cid-uFdFQcoh7E {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-image: url("https://r.mobirisesite.com/1287648/assets/images/photo-1611223235982-891064f27716.jpeg");
+}
+.cid-uFdFQcoh7E .mbr-fallback-image.disabled {
+  display: none;
+}
+.cid-uFdFQcoh7E .mbr-fallback-image {
+  display: block;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+.cid-uFdFQcoh7E .content-wrapper .image-wrapper {
+  margin-bottom: 32px;
+}
+.cid-uFdFQcoh7E .content-wrapper .image-wrapper img {
+  height: 530px;
+  object-fit: cover;
+}
+@media (max-width: 992px) {
+  .cid-uFdFQcoh7E .content-wrapper .image-wrapper img {
+    height: 350px;
+  }
+}
+.cid-uFdFQcoh7E .content-wrapper .mbr-section-title {
+  margin-bottom: 32px;
+}
+.cid-uFdFQcoh7E .content-wrapper .mbr-section-title span {
+  color: #ffffff;
+}
+.cid-uFdFQcoh7E .content-wrapper .text-wrapper .mbr-text {
+  display: inline-block;
+  width: 60%;
+  margin-bottom: 32px;
+}
+@media (max-width: 992px) {
+  .cid-uFdFQcoh7E .content-wrapper .text-wrapper .mbr-text {
+    margin-bottom: 16px;
+    width: 100%;
+  }
+}
+.cid-uFdFQcoh7E .mbr-section-title {
+  color: #ffffff;
+}
+.cid-uFdFQcoh7E .mbr-text,
+.cid-uFdFQcoh7E .text-wrapper {
+  color: #FFFFFF;
+  text-align: center;
+}
+.cid-uFdFQcoh7E .mbr-section-title,
+.cid-uFdFQcoh7E .mbr-section-btn {
+  text-align: center;
+  color: #FFFFFF;
+}
+</style></div><div class="app-component" data-app-component-id="31"><div class="app-component-menu"><div class="app-component-edit"><span class="mbr-btn sortable mbr-icon-arrows-vertical hidden-interface tooltipstered" data-tooltipster="bottom"></span><span class="mbr-btn component-clone mbr-icon-copy hidden-interface tooltipstered" data-tooltipster="bottom"></span><span class="mbr-btn component-code mbr-icon-code hidden-interface tooltipstered" data-tooltipster="bottom"></span><span class="mbr-btn component-params mbr-icon-cog tooltipstered" data-tooltipster="bottom"></span><span class="mbr-btn component-remove mbr-icon-trash hidden-interface tooltipstered" data-tooltipster="bottom"></span><span class="mbr-btn component-show-more mbr-icon-horizontal-ellipsis tooltipstered" data-tooltipster="bottom"></span></div></div><div class="app-component-content"><section class="features10 tradem5 cid-uFdFQcxzcM" data-bs-version="5.1" data-rv-view="92" id="features-11-uFdFQcxzcM" mbr-class2="this | fakeFilter uname__1 _params.bg.parallax" mbr-id="_anchor">
+<div class="mbr-overlay" data-app-remove-it="true" mbr-if="this | fakeFilter uname__16 _params.overlay _params.bg.type" mbr-style2="this | fakeFilter uname__17 _params.overlayOpacity _params.overlayColor" style="display: none; opacity: 0.7; background-color: rgb(247, 247, 247);">
+</div>
+<div class="container-fluid">
+<div class="loop-container" style="position: relative; display: inline-flex; white-space: nowrap; transform: translateX(-40.11%);">
+<div class="item display-1" data-direction="-1" data-linewords="Engage in lively discussions on cutting-edge topics. * Compete in exciting hackathons and showcase your skills. * " data-speed="0.03" mbr-class2="this | fakeFilter uname__18 _params.linesTitle _params.linesTitle" mbr-data-direction="this | fakeFilter uname__20 _params.direction | toNULL" mbr-data-linewords="this | fakeFilter uname__19 _params.animatedLine1 | toNULL" mbr-data-speed="this | fakeFilter uname__21 _params.speed | toNULL">Engage in lively discussions on cutting-edge topics. * Compete in exciting hackathons and showcase your skills. *  </div>
+<div class="item display-1" data-direction="-1" data-linewords="Engage in lively discussions on cutting-edge topics. * Compete in exciting hackathons and showcase your skills. * " data-speed="0.03" mbr-class2="this | fakeFilter uname__22 _params.linesTitle _params.linesTitle" mbr-data-direction="this | fakeFilter uname__24 _params.direction | toNULL" mbr-data-linewords="this | fakeFilter uname__23 _params.animatedLine1 | toNULL" mbr-data-speed="this | fakeFilter uname__25 _params.speed | toNULL" style="position: absolute; left: 100%;">Engage in lively discussions on cutting-edge topics. * Compete in exciting hackathons and showcase your skills. *  </div>
+</div>
+</div>
+</section></div><style>.cid-uFdFQcxzcM {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  background-color: #7fb069;
+}
+.cid-uFdFQcxzcM .item:focus,
+.cid-uFdFQcxzcM span:focus {
+  outline: none;
+}
+.cid-uFdFQcxzcM .container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+  overflow: hidden;
+}
+.cid-uFdFQcxzcM .loop-container {
+  padding: 10px 0;
+}
+.cid-uFdFQcxzcM .item {
+  color: #000000;
+  min-height: 90px;
+}
+@media (max-width: 768px) {
+  .cid-uFdFQcxzcM .item {
+    min-height: 45px;
+  }
+}
+</style></div><div class="app-component" data-app-component-id="32"><div class="app-component-menu"><div class="app-component-edit"><span class="mbr-btn sortable mbr-icon-arrows-vertical hidden-interface tooltipstered" data-tooltipster="bottom"></span><span class="mbr-btn component-clone mbr-icon-copy hidden-interface tooltipstered" data-tooltipster="bottom"></span><span class="mbr-btn component-code mbr-icon-code hidden-interface tooltipstered" data-tooltipster="bottom"></span><span class="mbr-btn component-params mbr-icon-cog tooltipstered" data-tooltipster="bottom"></span><span class="mbr-btn component-remove mbr-icon-trash hidden-interface tooltipstered" data-tooltipster="bottom"></span><span class="mbr-btn component-show-more mbr-icon-horizontal-ellipsis tooltipstered" data-tooltipster="bottom"></span></div></div><div class="app-component-content"><section class="image01 tradem5 cid-uFdFQcErQR" data-bs-version="5.1" data-rv-view="95" id="image-1-uFdFQcErQR" mbr-class2="this | fakeFilter uname__1 _params.fullScreen _params.bg.parallax" mbr-id="_anchor">
+<div class="mbr-fallback-image disabled" data-app-remove-it="true" mbr-if="this | fakeFilter uname__22 _params.bg.type" style="display: none;"></div>
+<div class="mbr-overlay" data-app-remove-it="true" mbr-bg-color="this | fakeFilter uname__25 _params.overlayColor | toNULL" mbr-if="this | fakeFilter uname__23 _params.overlay _params.bg.type" mbr-opacity="this | fakeFilter uname__24 _params.overlayOpacity | toNULL" style="display: none; opacity: 0.7; background-color: rgb(8, 8, 19);"></div>
+<div class="container" mbr-class2="this | fakeFilter uname__26 _params.fullWidth _params.fullWidth">
+<div class="row">
+<div class="col-12">
+<div class="content-wrapper">
+<img alt="Mobirise" mbr-media="uname__27" mbr-media-simple="true" mbr-on-click="uname__28" media-simple="true" src="./photo-1450609283058-0ec52fa7eac4.jpeg"/>
+</div>
+</div>
+</div>
+</div>
+</section></div><style>.cid-uFdFQcErQR {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #171200;
+}
+.cid-uFdFQcErQR .mbr-fallback-image.disabled {
+  display: none;
+}
+.cid-uFdFQcErQR .mbr-fallback-image {
+  display: block;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+.cid-uFdFQcErQR .content-wrapper {
+  padding: 24px;
+  border: 1px solid #7fb069;
+}
+@media (max-width: 992px) {
+  .cid-uFdFQcErQR .content-wrapper {
+    padding: 14px;
+  }
+}
+.cid-uFdFQcErQR .content-wrapper img {
+  height: 850px;
+  width: 100%;
+  object-fit: cover;
+  border: 1px solid #7fb069;
+}
+@media (max-width: 1200px) {
+  .cid-uFdFQcErQR .content-wrapper img {
+    height: 650px;
+  }
+}
+@media (max-width: 992px) {
+  .cid-uFdFQcErQR .content-wrapper img {
+    height: 350px;
+  }
+}
+</style></div><div class="app-component" data-app-component-id="33"><div class="app-component-menu"><div class="app-component-edit"><span class="mbr-btn sortable mbr-icon-arrows-vertical hidden-interface tooltipstered" data-tooltipster="bottom"></span><span class="mbr-btn component-clone mbr-icon-copy hidden-interface tooltipstered" data-tooltipster="bottom"></span><span class="mbr-btn component-code mbr-icon-code hidden-interface tooltipstered" data-tooltipster="bottom"></span><span class="mbr-btn component-params mbr-icon-cog tooltipstered" data-tooltipster="bottom"></span><span class="mbr-btn component-remove mbr-icon-trash hidden-interface tooltipstered" data-tooltipster="bottom"></span><span class="mbr-btn component-show-more mbr-icon-horizontal-ellipsis tooltipstered" data-tooltipster="bottom"></span></div></div><div class="app-component-content"><section class="list01 tradem5 cid-uFdFQcJKYQ" data-bs-version="5.1" data-rv-view="98" id="faq-1-uFdFQcJKYQ" mbr-class2="this | fakeFilter uname__1 _params.fullScreen _params.bg.parallax" mbr-id="_anchor">
+<div class="mbr-fallback-image disabled" data-app-remove-it="true" mbr-if="this | fakeFilter uname__23 _params.bg.type" style="display: none;"></div>
+<div class="mbr-overlay" data-app-remove-it="true" mbr-bg-color="this | fakeFilter uname__26 _params.overlayColor | toNULL" mbr-if="this | fakeFilter uname__24 _params.overlay _params.bg.type" mbr-opacity="this | fakeFilter uname__25 _params.overlayOpacity | toNULL" style="display: none; opacity: 0.7; background-color: rgb(8, 8, 19);"></div>
+<div class="container" mbr-class2="this | fakeFilter uname__27 _params.fullWidth _params.fullWidth">
+<div class="row">
+<div class="col-12">
+<div class="content-wrapper">
+<h2 class="mbr-section-title mbr-fonts-style display-2" data-app-edit="content" data-app-placeholder="Type Text" data-app-selector=".mbr-section-title" data-class-var="display-2" mbr-class-var="uname__28" mbr-content-edit="uname__31" mbr-if="this | fakeFilter uname__30 _params.showTitle" mbr-on-change-component-node="uname__32" mbr-on-change-theme-style="uname__29" mbr-static-html="uname__31">Got Questions? We’ve Got Answers!</h2>
+<div aria-multiselectable="true" class="panel-group accordionStyles accordion" id="bootstrap-accordion_33" role="tablist">
+<div class="card">
+<div class="card-header" id="headingOne" role="tab">
+<a aria-controls="collapse1" aria-expanded="false" class="panel-title collapsed" data-bs-toggle="collapse" data-core="" data-toggle="collapse" href="https://a.mobirise.com/app/builder/index.html#collapse1_33" role="button">
+<h4 class="panel-title-edit mbr-fonts-style display-5" data-app-edit="content" data-app-placeholder="Type Text" data-app-selector=".panel-title-edit, .icon-wrapper" data-class-var="display-5" mbr-class-var="uname__33" mbr-content-edit="uname__35" mbr-on-change-component-node="uname__36" mbr-on-change-theme-style="uname__34" mbr-static-html="uname__35">What topics can I discuss here?</h4>
+<div class="icon-wrapper">
+<span class="sign mbr-iconfont mobi-mbri-plus mobi-mbri"></span>
+</div>
+</a>
+</div>
+<div aria-labelledby="headingOne" class="panel-collapse noScroll collapse" data-bs-parent="#bootstrap-accordion_33" data-parent="#accordion" id="collapse1_33" role="tabpanel">
+<div class="panel-body">
+<p class="panel-text mbr-fonts-style display-4" data-app-edit="content" data-app-placeholder="Type Text" data-app-selector=".panel-text, .panel-body" data-class-var="display-4" mbr-class-var="uname__37" mbr-content-edit="uname__39" mbr-on-change-component-node="uname__40" mbr-on-change-theme-style="uname__38" mbr-static-html="uname__39">You can chat about anything from AI breakthroughs to the latest in space technology. Bring your wildest ideas and let’s get talking!</p>
+</div>
+</div>
+</div>
+<div class="card" mbr-if="this | fakeFilter uname__41 _params.cardAmount">
+<div class="card-header" id="headingTwo" role="tab">
+<a aria-controls="collapse2" aria-expanded="false" class="panel-title collapsed" data-bs-toggle="collapse" data-core="" data-toggle="collapse" href="https://a.mobirise.com/app/builder/index.html#collapse2_33" role="button">
+<h4 class="panel-title-edit mbr-fonts-style display-5" data-app-edit="content" data-app-placeholder="Type Text" data-app-selector=".panel-title-edit, .icon-wrapper" data-class-var="display-5" mbr-class-var="uname__42" mbr-content-edit="uname__44" mbr-on-change-component-node="uname__45" mbr-on-change-theme-style="uname__43" mbr-static-html="uname__44">How do I join hackathons?</h4>
+<div class="icon-wrapper">
+<span class="sign mbr-iconfont mobi-mbri-plus mobi-mbri"></span>
+</div>
+</a>
+</div>
+<div aria-labelledby="headingTwo" class="panel-collapse noScroll collapse" data-bs-parent="#bootstrap-accordion_33" data-parent="#accordion" id="collapse2_33" role="tabpanel">
+<div class="panel-body">
+<p class="panel-text mbr-fonts-style display-4" data-app-edit="content" data-app-placeholder="Type Text" data-app-selector=".panel-text, .panel-body" data-class-var="display-4" mbr-class-var="uname__46" mbr-content-edit="uname__48" mbr-on-change-component-node="uname__49" mbr-on-change-theme-style="uname__47" mbr-static-html="uname__48">Sign up on our website, pick a challenge, and get ready to show off your skills. Prizes await the bold!</p>
+</div>
+</div>
+</div>
+<div class="card" mbr-if="this | fakeFilter uname__50 _params.cardAmount">
+<div class="card-header" id="headingThree" role="tab">
+<a aria-controls="collapse3" aria-expanded="false" class="panel-title collapsed" data-bs-toggle="collapse" data-core="" data-toggle="collapse" href="https://a.mobirise.com/app/builder/index.html#collapse3_33" role="button">
+<h4 class="panel-title-edit mbr-fonts-style display-5" data-app-edit="content" data-app-placeholder="Type Text" data-app-selector=".panel-title-edit, .icon-wrapper" data-class-var="display-5" mbr-class-var="uname__51" mbr-content-edit="uname__53" mbr-on-change-component-node="uname__54" mbr-on-change-theme-style="uname__52" mbr-static-html="uname__53">Can I network with experts?</h4>
+<div class="icon-wrapper">
+<span class="sign mbr-iconfont mobi-mbri-plus mobi-mbri"></span>
+</div>
+</a>
+</div>
+<div aria-labelledby="headingThree" class="panel-collapse noScroll collapse" data-bs-parent="#bootstrap-accordion_33" data-parent="#accordion" id="collapse3_33" role="tabpanel">
+<div class="panel-body">
+<p class="panel-text mbr-fonts-style display-4" data-app-edit="content" data-app-placeholder="Type Text" data-app-selector=".panel-text, .panel-body" data-class-var="display-4" mbr-class-var="uname__55" mbr-content-edit="uname__57" mbr-on-change-component-node="uname__58" mbr-on-change-theme-style="uname__56" mbr-static-html="uname__57">Absolutely! Our community is filled with industry leaders eager to connect. Don’t be shy, reach out!</p>
+</div>
+</div>
+</div>
+<div class="card" mbr-if="this | fakeFilter uname__59 _params.cardAmount">
+<div class="card-header" id="headingFour" role="tab">
+<a aria-controls="collapse4" aria-expanded="false" class="panel-title collapsed" data-bs-toggle="collapse" data-core="" data-toggle="collapse" href="https://a.mobirise.com/app/builder/index.html#collapse4_33" role="button">
+<h4 class="panel-title-edit mbr-fonts-style display-5" data-app-edit="content" data-app-placeholder="Type Text" data-app-selector=".panel-title-edit, .icon-wrapper" data-class-var="display-5" mbr-class-var="uname__60" mbr-content-edit="uname__62" mbr-on-change-component-node="uname__63" mbr-on-change-theme-style="uname__61" mbr-static-html="uname__62">How do I stay updated?</h4>
+<div class="icon-wrapper">
+<span class="sign mbr-iconfont mobi-mbri-plus mobi-mbri"></span>
+</div>
+</a>
+</div>
+<div aria-labelledby="headingFour" class="panel-collapse noScroll collapse" data-bs-parent="#bootstrap-accordion_33" data-parent="#accordion" id="collapse4_33" role="tabpanel">
+<div class="panel-body">
+<p class="panel-text mbr-fonts-style display-4" data-app-edit="content" data-app-placeholder="Type Text" data-app-selector=".panel-text, .panel-body" data-class-var="display-4" mbr-class-var="uname__64" mbr-content-edit="uname__66" mbr-on-change-component-node="uname__67" mbr-on-change-theme-style="uname__65" mbr-static-html="uname__66">Subscribe to our newsletter and follow us on social media for the latest news and events. Don’t miss out!</p>
+</div>
+</div>
+</div>
+<div class="card" mbr-if="this | fakeFilter uname__68 _params.cardAmount">
+<div class="card-header" id="headingFive" role="tab">
+<a aria-controls="collapse5" aria-expanded="false" class="panel-title collapsed" data-bs-toggle="collapse" data-core="" data-toggle="collapse" href="https://a.mobirise.com/app/builder/index.html#collapse5_33" role="button">
+<h4 class="panel-title-edit mbr-fonts-style display-5" data-app-edit="content" data-app-placeholder="Type Text" data-app-selector=".panel-title-edit, .icon-wrapper" data-class-var="display-5" mbr-class-var="uname__69" mbr-content-edit="uname__71" mbr-on-change-component-node="uname__72" mbr-on-change-theme-style="uname__70" mbr-static-html="uname__71">What resources are available?</h4>
+<div class="icon-wrapper">
+<span class="sign mbr-iconfont mobi-mbri-plus mobi-mbri"></span>
+</div>
+</a>
+</div>
+<div aria-labelledby="headingFive" class="panel-collapse noScroll collapse" data-bs-parent="#bootstrap-accordion_33" data-parent="#accordion" id="collapse5_33" role="tabpanel">
+<div class="panel-body">
+<p class="panel-text mbr-fonts-style display-4" data-app-edit="content" data-app-placeholder="Type Text" data-app-selector=".panel-text, .panel-body" data-class-var="display-4" mbr-class-var="uname__73" mbr-content-edit="uname__75" mbr-on-change-component-node="uname__76" mbr-on-change-theme-style="uname__74" mbr-static-html="uname__75">We offer a variety of tools, guides, and mentorship opportunities to help you succeed. Dive in!</p>
+</div>
+</div>
+</div>
+<div class="card" mbr-if="this | fakeFilter uname__77 _params.cardAmount">
+<div class="card-header" id="headingSix" role="tab">
+<a aria-controls="collapse6" aria-expanded="false" class="panel-title collapsed" data-bs-toggle="collapse" data-core="" data-toggle="collapse" href="https://a.mobirise.com/app/builder/index.html#collapse6_33" role="button">
+<h4 class="panel-title-edit mbr-fonts-style display-5" data-app-edit="content" data-app-placeholder="Type Text" data-app-selector=".panel-title-edit, .icon-wrapper" data-class-var="display-5" mbr-class-var="uname__78" mbr-content-edit="uname__80" mbr-on-change-component-node="uname__81" mbr-on-change-theme-style="uname__79" mbr-static-html="uname__80">Is there a membership fee?</h4>
+<div class="icon-wrapper">
+<span class="sign mbr-iconfont mobi-mbri-plus mobi-mbri"></span>
+</div>
+</a>
+</div>
+<div aria-labelledby="headingSix" class="panel-collapse noScroll collapse" data-bs-parent="#bootstrap-accordion_33" data-parent="#accordion" id="collapse6_33" role="tabpanel">
+<div class="panel-body">
+<p class="panel-text mbr-fonts-style display-4" data-app-edit="content" data-app-placeholder="Type Text" data-app-selector=".panel-text, .panel-body" data-class-var="display-4" mbr-class-var="uname__82" mbr-content-edit="uname__84" mbr-on-change-component-node="uname__85" mbr-on-change-theme-style="uname__83" mbr-static-html="uname__84">Nope! Joining our community is completely free. Just bring your passion and creativity!</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section></div><style>.cid-uFdFQcJKYQ {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #171200;
+}
+.cid-uFdFQcJKYQ .mbr-fallback-image.disabled {
+  display: none;
+}
+.cid-uFdFQcJKYQ .mbr-fallback-image {
+  display: block;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+.cid-uFdFQcJKYQ .content-wrapper {
+  position: relative;
+  padding: 46px 24px;
+  overflow: hidden;
+  border: 1px solid #7fb069;
+  background-color: #171200;
+}
+@media (max-width: 992px) {
+  .cid-uFdFQcJKYQ .content-wrapper {
+    padding: 24px 14px 0 14px;
+  }
+}
+.cid-uFdFQcJKYQ .content-wrapper .mbr-section-title {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 48px;
+}
+@media (max-width: 992px) {
+  .cid-uFdFQcJKYQ .content-wrapper .mbr-section-title {
+    margin-bottom: 32px;
+  }
+}
+.cid-uFdFQcJKYQ .content-wrapper .panel-group .card {
+  position: relative;
+  padding: 24px;
+  background-color: transparent;
+  border: 1px solid #7fb069;
+  margin-bottom: 16px;
+}
+@media (max-width: 992px) {
+  .cid-uFdFQcJKYQ .content-wrapper .panel-group .card {
+    padding: 14px;
+  }
+}
+.cid-uFdFQcJKYQ .content-wrapper .panel-group .card .card-header {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+.cid-uFdFQcJKYQ .content-wrapper .panel-group .card .card-header .panel-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cid-uFdFQcJKYQ .content-wrapper .panel-group .card .card-header .panel-title .panel-title-edit {
+  margin-bottom: 0;
+}
+.cid-uFdFQcJKYQ .content-wrapper .panel-group .card .card-header .panel-title .icon-wrapper {
+  width: 50px;
+  height: 50px;
+  min-width: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+  transition: all 0.3s ease-in-out;
+  background-color: #4d5e85;
+  border-radius: 100%;
+}
+.cid-uFdFQcJKYQ .content-wrapper .panel-group .card .card-header .panel-title .icon-wrapper .mbr-iconfont {
+  transition: all 0.3s ease-in-out;
+  font-size: 26px;
+  color: #ffffff;
+}
+.cid-uFdFQcJKYQ .content-wrapper .panel-group .card .card-header .panel-title:not(.collapsed) .icon-wrapper {
+  transform: rotate(-45deg);
+}
+.cid-uFdFQcJKYQ .content-wrapper .panel-group .card .panel-collapse .panel-body {
+  margin-top: 24px;
+}
+@media (max-width: 992px) {
+  .cid-uFdFQcJKYQ .content-wrapper .panel-group .card .panel-collapse .panel-body {
+    margin-top: 14px;
+  }
+}
+.cid-uFdFQcJKYQ .content-wrapper .panel-group .card .panel-collapse .panel-body .panel-text {
+  display: inline-block;
+  width: 80%;
+  margin-bottom: 0;
+}
+@media (max-width: 992px) {
+  .cid-uFdFQcJKYQ .content-wrapper .panel-group .card .panel-collapse .panel-body .panel-text {
+    width: 100%;
+  }
+}
+.cid-uFdFQcJKYQ .mbr-section-title {
+  color: #FFFFFF;
+  text-align: center;
+}
+.cid-uFdFQcJKYQ .panel-title-edit {
+  color: #ffffff;
+}
+.cid-uFdFQcJKYQ .panel-text {
+  color: #ffffff;
+}
+.cid-uFdFQcJKYQ .panel-title-edit,
+.cid-uFdFQcJKYQ .icon-wrapper {
+  color: #FFFFFF;
+}
+.cid-uFdFQcJKYQ .panel-text,
+.cid-uFdFQcJKYQ .panel-body {
+  color: #FFFFFF;
+}
+</style></div><div class="app-component" data-app-component-id="34"><div class="app-component-menu"><div class="app-component-edit"><span class="mbr-btn sortable mbr-icon-arrows-vertical hidden-interface tooltipstered" data-tooltipster="bottom"></span><span class="mbr-btn component-clone mbr-icon-copy hidden-interface tooltipstered" data-tooltipster="bottom"></span><span class="mbr-btn component-code mbr-icon-code hidden-interface tooltipstered" data-tooltipster="bottom"></span><span class="mbr-btn component-params mbr-icon-cog tooltipstered" data-tooltipster="bottom"></span><span class="mbr-btn component-remove mbr-icon-trash hidden-interface tooltipstered" data-tooltipster="bottom"></span><span class="mbr-btn component-show-more mbr-icon-horizontal-ellipsis tooltipstered" data-tooltipster="bottom"></span></div></div><div class="app-component-content"><section class="slider02 mbr-embla tradem5 cid-uFdFQcZ7Ca" data-bs-version="5.1" data-rv-view="101" id="testimonials-1-uFdFQcZ7Ca" mbr-class2="this | fakeFilter uname__1 _params.fullScreen _params.bg.parallax" mbr-id="_anchor">
+<div class="mbr-overlay" data-app-remove-it="true" mbr-if="this | fakeFilter uname__20 _params.overlay _params.bg.type" style="display: none;"></div>
+<div class="container-fluid" mbr-class2="this | fakeFilter uname__21 _params.fullWidth _params.fullWidth">
+<div class="row">
+<div class="col-12">
+<div class="embla" data-align="center" data-auto-play="true" data-auto-play-interval="4" data-contain-scroll="trimSnaps" data-draggable="true" data-loop="true" data-skip-snaps="true" mbr-data-auto-play="this | fakeFilter uname__23 _params.autoplay | toNULL" mbr-data-auto-play-interval="this | fakeFilter uname__24 _params.interval | toNULL" mbr-data-draggable="this | fakeFilter uname__25 _params.draggable | toNULL" mbr-data-loop="this | fakeFilter uname__22 _params.loop | toNULL">
+<div class="embla__viewport">
+<div class="embla__container" style="transform: translate3d(-43.2533%, 0px, 0px);">
+<div class="embla__slide slider-image item" mbr-style2="this | fakeFilter uname__26 _params.gap _params.gap" style="margin-left: 8px; margin-right: 8px; left: 0%;">
+<div class="slide-content">
+<div class="item-wrapper">
+<div class="item-img">
+<div class="image-wrap">
+<img alt="Mobirise Website Builder" mbr-media="uname__27" mbr-media-simple="true" mbr-on-click="uname__28" media-simple="true" src="./photo-1679746584014-fb31d4eb0a5e.jpeg"/>
+</div>
+<p class="item-text mbr-fonts-style display-4" data-app-edit="content" data-app-placeholder="Type Text" data-app-selector=".item-text, .image-wrap" data-class-var="display-4" mbr-class-var="uname__30" mbr-content-edit="uname__32" mbr-if="this | fakeFilter uname__29 _params.showCardText" mbr-on-change-component-node="uname__33" mbr-on-change-theme-style="uname__31" mbr-static-html="uname__32">This community is a goldmine for ideas!</p>
+</div>
+<div class="item-content">
+<p class="item-name mbr-fonts-style display-7" data-app-edit="content" data-app-placeholder="Type Text" data-app-selector=".item-name" data-class-var="display-7" mbr-class-var="uname__35" mbr-content-edit="uname__37" mbr-if="this | fakeFilter uname__34 _params.showName" mbr-on-change-component-node="uname__38" mbr-on-change-theme-style="uname__36" mbr-static-html="uname__37">John Doe</p>
+<p class="item-role mbr-fonts-style display-4" data-app-edit="content" data-app-placeholder="Type Text" data-app-selector=".item-role" data-class-var="display-4" mbr-class-var="uname__40" mbr-content-edit="uname__42" mbr-if="this | fakeFilter uname__39 _params.showRole" mbr-on-change-component-node="uname__43" mbr-on-change-theme-style="uname__41" mbr-static-html="uname__42">Tech Guru</p>
+</div>
+</div>
+</div>
+</div>
+<div class="embla__slide slider-image item is-selected" mbr-style2="this | fakeFilter uname__44 _params.gap _params.gap" style="margin-left: 8px; margin-right: 8px; left: 0%;">
+<div class="slide-content">
+<div class="item-wrapper">
+<div class="item-img">
+<div class="image-wrap">
+<img alt="Mobirise Website Builder" mbr-media="uname__45" mbr-media-simple="true" mbr-on-click="uname__46" media-simple="true" src="./photo-1589571894960-20bbe2828d0a.jpeg"/>
+</div>
+<p class="item-text mbr-fonts-style display-4" data-app-edit="content" data-app-placeholder="Type Text" data-app-selector=".item-text, .image-wrap" data-class-var="display-4" mbr-class-var="uname__48" mbr-content-edit="uname__50" mbr-if="this | fakeFilter uname__47 _params.showCardText" mbr-on-change-component-node="uname__51" mbr-on-change-theme-style="uname__49" mbr-static-html="uname__50">I found my dream project here. Amazing!</p>
+</div>
+<div class="item-content">
+<p class="item-name mbr-fonts-style display-7" data-app-edit="content" data-app-placeholder="Type Text" data-app-selector=".item-name" data-class-var="display-7" mbr-class-var="uname__53" mbr-content-edit="uname__55" mbr-if="this | fakeFilter uname__52 _params.showName" mbr-on-change-component-node="uname__56" mbr-on-change-theme-style="uname__54" mbr-static-html="uname__55">Jane Smith</p>
+<p class="item-role mbr-fonts-style display-4" data-app-edit="content" data-app-placeholder="Type Text" data-app-selector=".item-role" data-class-var="display-4" mbr-class-var="uname__58" mbr-content-edit="uname__60" mbr-if="this | fakeFilter uname__57 _params.showRole" mbr-on-change-component-node="uname__61" mbr-on-change-theme-style="uname__59" mbr-static-html="uname__60">Innovator</p>
+</div>
+</div>
+</div>
+</div>
+<div class="embla__slide slider-image item is-selected" mbr-style2="this | fakeFilter uname__62 _params.gap _params.gap" style="margin-left: 8px; margin-right: 8px; left: 0%;">
+<div class="slide-content">
+<div class="item-wrapper">
+<div class="item-img">
+<div class="image-wrap">
+<img alt="Mobirise Website Builder" mbr-media="uname__63" mbr-media-simple="true" mbr-on-click="uname__64" media-simple="true" src="./photo-1626899798511-c3eaacb02846.jpeg"/>
+</div>
+<p class="item-text mbr-fonts-style display-4" data-app-edit="content" data-app-placeholder="Type Text" data-app-selector=".item-text, .image-wrap" data-class-var="display-4" mbr-class-var="uname__66" mbr-content-edit="uname__68" mbr-if="this | fakeFilter uname__65 _params.showCardText" mbr-on-change-component-node="uname__69" mbr-on-change-theme-style="uname__67" mbr-static-html="uname__68">The hackathons are intense but rewarding!</p>
+</div>
+<div class="item-content">
+<p class="item-name mbr-fonts-style display-7" data-app-edit="content" data-app-placeholder="Type Text" data-app-selector=".item-name" data-class-var="display-7" mbr-class-var="uname__71" mbr-content-edit="uname__73" mbr-if="this | fakeFilter uname__70 _params.showName" mbr-on-change-component-node="uname__74" mbr-on-change-theme-style="uname__72" mbr-static-html="uname__73">Mike Brown</p>
+<p class="item-role mbr-fonts-style display-4" data-app-edit="content" data-app-placeholder="Type Text" data-app-selector=".item-role" data-class-var="display-4" mbr-class-var="uname__76" mbr-content-edit="uname__78" mbr-if="this | fakeFilter uname__75 _params.showRole" mbr-on-change-component-node="uname__79" mbr-on-change-theme-style="uname__77" mbr-static-html="uname__78">Developer</p>
+</div>
+</div>
+</div>
+</div>
+<div class="embla__slide slider-image item is-selected" mbr-style2="this | fakeFilter uname__80 _params.gap _params.gap" style="margin-left: 8px; margin-right: 8px;">
+<div class="slide-content">
+<div class="item-wrapper">
+<div class="item-img">
+<div class="image-wrap">
+<img alt="Mobirise Website Builder" mbr-media="uname__81" mbr-media-simple="true" mbr-on-click="uname__82" media-simple="true" src="./photo-1545803928-04e3f4cdd4ed.jpeg"/>
+</div>
+<p class="item-text mbr-fonts-style display-4" data-app-edit="content" data-app-placeholder="Type Text" data-app-selector=".item-text, .image-wrap" data-class-var="display-4" mbr-class-var="uname__84" mbr-content-edit="uname__86" mbr-if="this | fakeFilter uname__83 _params.showCardText" mbr-on-change-component-node="uname__87" mbr-on-change-theme-style="uname__85" mbr-static-html="uname__86">Networking here changed my career path!</p>
+</div>
+<div class="item-content">
+<p class="item-name mbr-fonts-style display-7" data-app-edit="content" data-app-placeholder="Type Text" data-app-selector=".item-name" data-class-var="display-7" mbr-class-var="uname__89" mbr-content-edit="uname__91" mbr-if="this | fakeFilter uname__88 _params.showName" mbr-on-change-component-node="uname__92" mbr-on-change-theme-style="uname__90" mbr-static-html="uname__91">Sara White</p>
+<p class="item-role mbr-fonts-style display-4" data-app-edit="content" data-app-placeholder="Type Text" data-app-selector=".item-role" data-class-var="display-4" mbr-class-var="uname__94" mbr-content-edit="uname__96" mbr-if="this | fakeFilter uname__93 _params.showRole" mbr-on-change-component-node="uname__97" mbr-on-change-theme-style="uname__95" mbr-static-html="uname__96">Entrepreneur</p>
+</div>
+</div>
+</div>
+</div>
+<div class="embla__slide slider-image item is-selected" mbr-style2="this | fakeFilter uname__98 _params.gap _params.gap" style="margin-left: 8px; margin-right: 8px; left: 0%;">
+<div class="slide-content">
+<div class="item-wrapper">
+<div class="item-img">
+<div class="image-wrap">
+<img alt="Mobirise Website Builder" mbr-media="uname__99" mbr-media-simple="true" mbr-on-click="uname__100" media-simple="true" src="./photo-1497485692312-a26e1cc30f1d.jpeg"/>
+</div>
+<p class="item-text mbr-fonts-style display-4" data-app-edit="content" data-app-placeholder="Type Text" data-app-selector=".item-text, .image-wrap" data-class-var="display-4" mbr-class-var="uname__102" mbr-content-edit="uname__104" mbr-if="this | fakeFilter uname__101 _params.showCardText" mbr-on-change-component-node="uname__105" mbr-on-change-theme-style="uname__103" mbr-static-html="uname__104">I love the community vibe. So supportive!</p>
+</div>
+<div class="item-content">
+<p class="item-name mbr-fonts-style display-7" data-app-edit="content" data-app-placeholder="Type Text" data-app-selector=".item-name" data-class-var="display-7" mbr-class-var="uname__107" mbr-content-edit="uname__109" mbr-if="this | fakeFilter uname__106 _params.showName" mbr-on-change-component-node="uname__110" mbr-on-change-theme-style="uname__108" mbr-static-html="uname__109">Tom Green</p>
+<p class="item-role mbr-fonts-style display-4" data-app-edit="content" data-app-placeholder="Type Text" data-app-selector=".item-role" data-class-var="display-4" mbr-class-var="uname__112" mbr-content-edit="uname__114" mbr-if="this | fakeFilter uname__111 _params.showRole" mbr-on-change-component-node="uname__115" mbr-on-change-theme-style="uname__113" mbr-static-html="uname__114">Designer</p>
+</div>
+</div>
+</div>
+</div>
+<div class="embla__slide slider-image item is-selected" mbr-style2="this | fakeFilter uname__116 _params.gap _params.gap" style="margin-left: 8px; margin-right: 8px; left: 0%;">
+<div class="slide-content">
+<div class="item-wrapper">
+<div class="item-img">
+<div class="image-wrap">
+<img alt="Mobirise Website Builder" mbr-media="uname__117" mbr-media-simple="true" mbr-on-click="uname__118" media-simple="true" src="./photo-1692558588242-57cec1e32bba.jpeg"/>
+</div>
+<p class="item-text mbr-fonts-style display-4" data-app-edit="content" data-app-placeholder="Type Text" data-app-selector=".item-text, .image-wrap" data-class-var="display-4" mbr-class-var="uname__120" mbr-content-edit="uname__122" mbr-if="this | fakeFilter uname__119 _params.showCardText" mbr-on-change-component-node="uname__123" mbr-on-change-theme-style="uname__121" mbr-static-html="uname__122">Endless opportunities and great people!</p>
+</div>
+<div class="item-content">
+<p class="item-name mbr-fonts-style display-7" data-app-edit="content" data-app-placeholder="Type Text" data-app-selector=".item-name" data-class-var="display-7" mbr-class-var="uname__125" mbr-content-edit="uname__127" mbr-if="this | fakeFilter uname__124 _params.showName" mbr-on-change-component-node="uname__128" mbr-on-change-theme-style="uname__126" mbr-static-html="uname__127">Lisa Black</p>
+<p class="item-role mbr-fonts-style display-4" data-app-edit="content" data-app-placeholder="Type Text" data-app-selector=".item-role" data-class-var="display-4" mbr-class-var="uname__130" mbr-content-edit="uname__132" mbr-if="this | fakeFilter uname__129 _params.showRole" mbr-on-change-component-node="uname__133" mbr-on-change-theme-style="uname__131" mbr-static-html="uname__132">Engineer</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<button class="embla__button embla__button--prev">
+<span aria-hidden="true" class="mbr-iconfont mobi-mbri-left mobi-mbri"></span>
+<span class="sr-only visually-hidden visually-hidden visually-hidden">Previous</span>
+</button>
+<button class="embla__button embla__button--next">
+<span aria-hidden="true" class="mbr-iconfont mobi-mbri-right mobi-mbri"></span>
+<span class="sr-only visually-hidden visually-hidden visually-hidden">Next</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section></div><style>.cid-uFdFQcZ7Ca {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #171200;
+  overflow: hidden;
+}
+.cid-uFdFQcZ7Ca .mbr-section-title {
+  margin-bottom: 32px;
+  opacity: 0.5;
+}
+@media (max-width: 992px) {
+  .cid-uFdFQcZ7Ca .mbr-section-title {
+    margin-bottom: 16px;
+  }
+}
+.cid-uFdFQcZ7Ca .embla__slide {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  min-width: 450px;
+  max-width: 450px;
+}
+@media (max-width: 767px) {
+  .cid-uFdFQcZ7Ca .embla__slide {
+    min-width: 100%;
+    max-width: 100%;
+  }
+}
+.cid-uFdFQcZ7Ca .embla__slide .slide-content {
+  width: 100%;
+}
+.cid-uFdFQcZ7Ca .embla__slide .slide-content .item-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  border: 1px solid #7fb069;
+  padding: 24px;
+}
+@media (max-width: 992px) {
+  .cid-uFdFQcZ7Ca .embla__slide .slide-content .item-wrapper {
+    padding: 14px;
+  }
+}
+.cid-uFdFQcZ7Ca .embla__slide .slide-content .item-wrapper .item-img .image-wrap {
+  margin-bottom: 32px;
+}
+@media (max-width: 992px) {
+  .cid-uFdFQcZ7Ca .embla__slide .slide-content .item-wrapper .item-img .image-wrap {
+    margin-bottom: 16px;
+  }
+}
+.cid-uFdFQcZ7Ca .embla__slide .slide-content .item-wrapper .item-img .image-wrap img {
+  height: 80px;
+  width: 80px;
+  border-radius: 100% !important;
+  display: inline-flex;
+  object-fit: cover;
+}
+.cid-uFdFQcZ7Ca .embla__slide .slide-content .item-wrapper .item-img .item-text {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 32px;
+}
+@media (max-width: 992px) {
+  .cid-uFdFQcZ7Ca .embla__slide .slide-content .item-wrapper .item-img .item-text {
+    margin-bottom: 16px;
+  }
+}
+.cid-uFdFQcZ7Ca .embla__slide .slide-content .item-wrapper .item-content {
+  position: relative;
+  z-index: 1;
+}
+.cid-uFdFQcZ7Ca .embla__slide .slide-content .item-wrapper .item-content .item-name {
+  margin-bottom: 8px;
+}
+.cid-uFdFQcZ7Ca .embla__slide .slide-content .item-wrapper .item-content .item-role {
+  margin-bottom: 0;
+}
+.cid-uFdFQcZ7Ca .embla__button--next,
+.cid-uFdFQcZ7Ca .embla__button--prev {
+  display: flex;
+}
+.cid-uFdFQcZ7Ca .embla__button {
+  bottom: 0;
+  width: 32px;
+  height: 32px;
+  font-size: 32px;
+  background-color: transparent !important;
+  color: #bcfe1e !important;
+  border: transparent !important;
+  border-radius: 50%;
+  transition: all 0.3s;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1 !important;
+  display: none;
+}
+.cid-uFdFQcZ7Ca .embla__button:hover {
+  opacity: 0.5 !important;
+}
+.cid-uFdFQcZ7Ca .embla__button.embla__button--prev {
+  right: 48px;
+}
+.cid-uFdFQcZ7Ca .embla__button.embla__button--next {
+  right: 0;
+}
+.cid-uFdFQcZ7Ca .embla {
+  position: relative;
+  width: 100%;
+}
+.cid-uFdFQcZ7Ca .embla__viewport {
+  width: 100%;
+  margin-right: 1rem;
+}
+.cid-uFdFQcZ7Ca .embla__viewport.is-draggable {
+  cursor: grab;
+}
+.cid-uFdFQcZ7Ca .embla__viewport.is-dragging {
+  cursor: grabbing;
+}
+.cid-uFdFQcZ7Ca .embla__container {
+  display: flex;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -khtml-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.cid-uFdFQcZ7Ca .item-menu-overlay {
+  opacity: 0 !important;
+}
+.cid-uFdFQcZ7Ca .item-text {
+  color: #ffffff;
+}
+.cid-uFdFQcZ7Ca .item-name {
+  color: #FFFFFF;
+}
+.cid-uFdFQcZ7Ca .item-role {
+  color: #FFFFFF;
+}
+.cid-uFdFQcZ7Ca .item-text,
+.cid-uFdFQcZ7Ca .image-wrap {
+  color: #FFFFFF;
+}
+</style></div><div class="app-component" data-app-component-id="35"><div class="app-component-menu"><div class="app-component-edit"><span class="mbr-btn sortable mbr-icon-arrows-vertical hidden-interface tooltipstered" data-tooltipster="bottom"></span><span class="mbr-btn component-clone mbr-icon-copy hidden-interface tooltipstered" data-tooltipster="bottom"></span><span class="mbr-btn component-code mbr-icon-code hidden-interface tooltipstered" data-tooltipster="bottom"></span><span class="mbr-btn component-params mbr-icon-cog tooltipstered" data-tooltipster="bottom"></span><span class="mbr-btn component-remove mbr-icon-trash hidden-interface tooltipstered" data-tooltipster="bottom"></span><span class="mbr-btn component-show-more mbr-icon-horizontal-ellipsis tooltipstered" data-tooltipster="bottom"></span></div></div><div class="app-component-content"><section class="article01 tradem5 cid-uFdFQdt9xJ" data-bs-version="5.1" data-rv-view="104" id="generic-text-1-uFdFQdt9xJ" mbr-class2="this | fakeFilter uname__1 _params.fullScreen _params.bg.parallax" mbr-id="_anchor">
+<div class="mbr-fallback-image disabled" data-app-remove-it="true" mbr-if="this | fakeFilter uname__24 _params.bg.type" style="display: none;"></div>
+<div class="mbr-overlay" data-app-remove-it="true" mbr-bg-color="this | fakeFilter uname__27 _params.overlayColor | toNULL" mbr-if="this | fakeFilter uname__25 _params.overlay _params.bg.type" mbr-opacity="this | fakeFilter uname__26 _params.overlayOpacity | toNULL" style="display: none; opacity: 0.7; background-color: rgb(8, 8, 19);"></div>
+<div class="container" mbr-class2="this | fakeFilter uname__28 _params.fullWidth _params.fullWidth">
+<div class="row">
+<div class="col-12">
+<div class="content-wrapper">
+<h2 class="mbr-section-title mbr-fonts-style display-2" data-app-edit="content" data-app-placeholder="Type Text" data-app-selector=".mbr-section-title, .mbr-section-btn" data-class-var="display-2" mbr-class-var="uname__29" mbr-content-edit="uname__32" mbr-if="this | fakeFilter uname__31 _params.showTitle" mbr-on-change-component-node="uname__33" mbr-on-change-theme-style="uname__30" mbr-static-html="uname__32">Community Connect</h2>
+<div class="text-wrapper">
+<p class="mbr-text mbr-fonts-style display-4" data-app-edit="content" data-app-placeholder="Type Text" data-app-selector=".mbr-text, .text-wrapper" data-class-var="display-4" mbr-class-var="uname__34" mbr-content-edit="uname__37" mbr-if="this | fakeFilter uname__36 _params.showText" mbr-on-change-component-node="uname__38" mbr-on-change-theme-style="uname__35" mbr-static-html="uname__37">Join a vibrant community where ideas collide! Engage in discussions about cutting-edge research, AI, and space tech. Your insights could spark the next big thing. Don't just sit there, get involved!</p>
+</div>
+<div class="mbr-section-btn" data-app-edit="buttons" data-class-var="display-4" data-toolbar="-mbrBtnMove" mbr-buttons="uname__41" mbr-class-var="uname__42" mbr-content-edit="uname__39" mbr-if="this | fakeFilter uname__44 _params.showButtons" mbr-on-change-component-node="uname__40" mbr-on-change-theme-style="uname__43" mbr-static-html="uname__39">
+<a class="btn btn-primary display-4" data-app-btn="true" data-app-placeholder="Type Text" href="/Esha Hub Website/join page test/join page.html">Join Now</a>
+</div>
+<div class="border-wrap" data-app-remove-it="true" mbr-if="this | fakeFilter uname__45 _params.showBorder" style="display: none;"></div>
+</div>
+</div>
+</div>
+</div>
+</section></div><style>.cid-uFdFQdt9xJ {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #171200;
+}
+.cid-uFdFQdt9xJ .mbr-fallback-image.disabled {
+  display: none;
+}
+.cid-uFdFQdt9xJ .mbr-fallback-image {
+  display: block;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+.cid-uFdFQdt9xJ .content-wrapper .mbr-section-title {
+  margin-bottom: 32px;
+}
+.cid-uFdFQdt9xJ .content-wrapper .mbr-section-title span {
+  color: #ffffff;
+}
+.cid-uFdFQdt9xJ .content-wrapper .text-wrapper .mbr-text {
+  display: inline-block;
+  width: 60%;
+  margin-bottom: 22px;
+}
+@media (max-width: 992px) {
+  .cid-uFdFQdt9xJ .content-wrapper .text-wrapper .mbr-text {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+}
+.cid-uFdFQdt9xJ .border-wrap {
+  margin-top: 64px;
+  height: 2px;
+  background: linear-gradient(90deg, #292739, #bcfe1e, #292739);
+}
+@media (max-width: 992px) {
+  .cid-uFdFQdt9xJ .border-wrap {
+    margin-top: 32px;
+  }
+}
+.cid-uFdFQdt9xJ .mbr-section-title {
+  color: #ffffff;
+}
+.cid-uFdFQdt9xJ .mbr-text,
+.cid-uFdFQdt9xJ .text-wrapper {
+  color: #FFFFFF;
+  text-align: center;
+}
+.cid-uFdFQdt9xJ .mbr-section-title,
+.cid-uFdFQdt9xJ .mbr-section-btn {
+  text-align: center;
+  color: #FFFFFF;
+}
+</style></div><div class="app-component" data-app-component-id="36"><div class="app-component-menu"><div class="app-component-edit"><span class="mbr-btn sortable mbr-icon-arrows-vertical hidden-interface tooltipstered" data-tooltipster="bottom"></span><span class="mbr-btn component-clone mbr-icon-copy hidden-interface tooltipstered" data-tooltipster="bottom"></span><span class="mbr-btn component-code mbr-icon-code hidden-interface tooltipstered" data-tooltipster="bottom"></span><span class="mbr-btn component-params mbr-icon-cog tooltipstered" data-tooltipster="bottom"></span><span class="mbr-btn component-remove mbr-icon-trash hidden-interface tooltipstered" data-tooltipster="bottom"></span><span class="mbr-btn component-show-more mbr-icon-horizontal-ellipsis tooltipstered" data-tooltipster="bottom"></span></div></div><div class="app-component-content"><section class="gallery tradem5 cid-uFdFQdA6Ey" data-bs-version="5.1" data-rv-view="107" id="gallery-1-uFdFQdA6Ey" mbr-class2="this | fakeFilter uname__1 _params.fullScreen _params.bg.parallax" mbr-id="_anchor">
+<div class="mbr-fallback-image disabled" data-app-remove-it="true" mbr-if="this | fakeFilter uname__20 _params.bg.type" style="display: none;"></div>
+<div class="mbr-overlay" data-app-remove-it="true" mbr-bg-color="this | fakeFilter uname__23 _params.overlayColor | toNULL" mbr-if="this | fakeFilter uname__21 _params.overlay _params.bg.type" mbr-opacity="this | fakeFilter uname__22 _params.overlayOpacity | toNULL" style="display: none; opacity: 0.7; background-color: rgb(8, 8, 19);"></div>
+<div class="container" mbr-class2="this | fakeFilter uname__24 _params.fullWidth _params.fullWidth">
+<div class="row items-wrap">
+<div class="item features-image col-12 col-lg-4">
+<div class="item-wrapper">
+<div class="item-img card_1">
+<img alt="Mobirise Website Builder" mbr-media="uname__25" mbr-media-simple="true" mbr-on-click="uname__26" media-simple="true" src="./photo-1525026198548-4baa812f1183.jpeg"/>
+</div>
+</div>
+</div>
+<div class="item features-image col-12 col-lg-7">
+<div class="item-wrapper">
+<div class="item-img card_2">
+<img alt="Mobirise Website Builder" mbr-media="uname__27" mbr-media-simple="true" mbr-on-click="uname__28" media-simple="true" src="./photo-1522543558187-768b6df7c25c.jpeg"/>
+</div>
+</div>
+</div>
+<div class="item features-image col-12 col-lg-10">
+<div class="item-wrapper">
+<div class="item-img card_3">
+<img alt="Mobirise Website Builder" mbr-media="uname__29" mbr-media-simple="true" mbr-on-click="uname__30" media-simple="true" src="./photo-1444210971048-6130cf0c46cf.jpeg"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section></div><style>.cid-uFdFQdA6Ey {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #171200;
+}
+.cid-uFdFQdA6Ey .mbr-fallback-image.disabled {
+  display: none;
+}
+.cid-uFdFQdA6Ey .mbr-fallback-image {
+  display: block;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+.cid-uFdFQdA6Ey .items-wrap {
+  justify-content: center;
+}
+.cid-uFdFQdA6Ey .items-wrap .item {
+  margin-bottom: 48px;
+}
+@media (max-width: 992px) {
+  .cid-uFdFQdA6Ey .items-wrap .item {
+    margin-bottom: 14px;
+  }
+}
+.cid-uFdFQdA6Ey .items-wrap .item .item-wrapper .item-img img {
+  height: 360px;
+  width: 100%;
+  object-fit: cover;
+}
+.cid-uFdFQdA6Ey .items-wrap .item .item-wrapper .card_1 img {
+  transform: rotate(-6deg);
+}
+@media (max-width: 992px) {
+  .cid-uFdFQdA6Ey .items-wrap .item .item-wrapper .card_1 img {
+    transform: none;
+  }
+}
+.cid-uFdFQdA6Ey .items-wrap .item .item-wrapper .card_2 img {
+  transform: rotate(6deg);
+}
+@media (max-width: 992px) {
+  .cid-uFdFQdA6Ey .items-wrap .item .item-wrapper .card_2 img {
+    transform: none;
+  }
+}
+.cid-uFdFQdA6Ey .items-wrap .item .item-wrapper .card_3 img {
+  transform: rotate(10deg);
+}
+@media (max-width: 992px) {
+  .cid-uFdFQdA6Ey .items-wrap .item .item-wrapper .card_3 img {
+    transform: none;
+  }
+}
+</style></div><div class="app-component" data-app-component-id="37"><div class="app-component-menu"><div class="app-component-edit"><span class="mbr-btn sortable mbr-icon-arrows-vertical hidden-interface tooltipstered" data-tooltipster="bottom"></span><span class="mbr-btn component-clone mbr-icon-copy hidden-interface tooltipstered" data-tooltipster="bottom"></span><span class="mbr-btn component-code mbr-icon-code hidden-interface tooltipstered" data-tooltipster="bottom"></span><span class="mbr-btn component-params mbr-icon-cog tooltipstered" data-tooltipster="bottom"></span><span class="mbr-btn component-remove mbr-icon-trash hidden-interface tooltipstered" data-tooltipster="bottom"></span><span class="mbr-btn component-show-more mbr-icon-horizontal-ellipsis tooltipstered" data-tooltipster="bottom"></span></div></div><div class="app-component-content"><section class="form01 tradem5 cid-uFdFQdHq0e" data-bs-version="5.1" data-rv-view="110" id="contact-form-1-uFdFQdHq0e" mbr-class2="this | fakeFilter uname__1 _params.fullScreen _params.bg.parallax" mbr-id="_anchor">
+<div class="mbr-fallback-image disabled" data-app-remove-it="true" mbr-if="this | fakeFilter uname__24 _params.bg.type" style="display: none;"></div>
+<div class="mbr-overlay" data-app-remove-it="true" mbr-bg-color="this | fakeFilter uname__27 _params.overlayColor | toNULL" mbr-if="this | fakeFilter uname__25 _params.overlay _params.bg.type" mbr-opacity="this | fakeFilter uname__26 _params.overlayOpacity | toNULL" style="display: none; opacity: 0.7; background-color: rgb(8, 8, 19);"></div>
+<div class="container" mbr-class2="this | fakeFilter uname__28 _params.fullWidth _params.fullWidth">
+<div class="row">
+<div class="col-12">
+<div class="title-wrapper">
+<h2 class="mbr-section-title mbr-fonts-style display-2" data-app-edit="content" data-app-placeholder="Type Text" data-app-selector=".mbr-section-title, .mbr-section-btn" data-class-var="display-2" mbr-class-var="uname__29" mbr-content-edit="uname__32" mbr-if="this | fakeFilter uname__31 _params.showTitle" mbr-on-change-component-node="uname__33" mbr-on-change-theme-style="uname__30" mbr-static-html="uname__32">Get in Touch with Us</h2>
+</div>
+</div>
+</div>
+<div class="row items-wrap" mbr-class2="this | fakeFilter uname__34 _params.reverseContent">
+<div class="col-12 col-lg-6 card">
+<div class="content-wrapper">
+<div class="mbr-form form-wrapper">
+<form action="https://mobirise.eu/" class="mbr-form form-with-styler" mbr-form="uname__35" method="POST">
+<div class="row">
+<div class="alert alert-success col-12" data-form-alert="" hidden="hidden">Thanks for
+                                    filling out the form!</div>
+<div class="alert alert-danger col-12" data-form-alert-danger="" hidden="hidden">
+                                    Oops...! some problem!
+                                </div>
+</div>
+<div class="dragArea row">
+<div class="col-lg-12 col-md-12 col-sm-12 form-group mb-3" data-for="text">
+<input class="form-control display-4" data-class-var="display-4" data-form-field="text" mbr-class-var="uname__36" mbr-on-change-theme-style="uname__37" name="text" placeholder="Name" type="text" value=""/>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12 form-group mb-3 mb-3" data-for="number">
+<input class="form-control display-4" data-class-var="display-4" data-form-field="number" mbr-class-var="uname__38" mbr-on-change-theme-style="uname__39" name="phone" placeholder="Phone" type="text" value=""/>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12 form-group mb-3" data-for="email">
+<input class="form-control display-4" data-class-var="display-4" data-form-field="email" mbr-class-var="uname__40" mbr-on-change-theme-style="uname__41" name="email" placeholder="Email" type="email" value=""/>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12 form-group mb-3" data-for="textarea">
+<textarea class="form-control display-4" data-class-var="display-4" data-form-field="textarea" mbr-class-var="uname__42" mbr-on-change-theme-style="uname__43" name="textarea" placeholder="Message"></textarea>
+</div>
+<div class="col mbr-section-btn" data-app-edit="buttons" data-class-var="display-4" data-toolbar="-mbrBtnMove,-mbrLink,-mbrBtnRemove,-mbrBtnAdd" mbr-buttons="uname__46" mbr-class-var="uname__47" mbr-content-edit="uname__44" mbr-on-change-component-node="uname__45" mbr-on-change-theme-style="uname__48" mbr-static-html="uname__44">
+<a class="btn btn-primary display-4" data-app-btn="true" data-app-placeholder="Type Text" data-toolbar="-mbrBtnMove,-mbrLink,-mbrBtnRemove,-mbrBtnAdd" type="submit">Send Message</a>
+</div>
+</div>
+<span class="gdpr-block">
+<label>
+<span class="textGDPR display-7" style="color: #a7a7a7"><input id="gdpr-input" name="gdpr" required="" type="checkbox"/>By continuing you agree to our <a href="https://a.mobirise.com/app/builder/terms.html" style="color: #149dcc; text-decoration: none;">Terms of Service</a> and <a href="https://a.mobirise.com/app/builder/policy.html" style="color: #149dcc; text-decoration: none;">Privacy Policy</a>.</span>
+</label>
+</span></form>
+</div>
+</div>
+</div>
+<div class="col-12 col-lg-6 card">
+<div class="google-map" mbr-map="_params.googleMap"><iframe allowfullscreen="" frameborder="0" src="./place.html" style="border:0"></iframe></div>
+</div>
+</div>
+</div>
+</section></div><style>.cid-uFdFQdHq0e {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #171200;
+}
+.cid-uFdFQdHq0e .mbr-fallback-image.disabled {
+  display: none;
+}
+.cid-uFdFQdHq0e .mbr-fallback-image {
+  display: block;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+.cid-uFdFQdHq0e .title-wrapper .mbr-section-title {
+  margin-bottom: 100px;
+}
+@media (max-width: 992px) {
+  .cid-uFdFQdHq0e .title-wrapper .mbr-section-title {
+    margin-bottom: 32px;
+  }
+}
+.cid-uFdFQdHq0e .items-wrap {
+  margin: 0 -7px;
+}
+.cid-uFdFQdHq0e .items-wrap .card {
+  padding: 0 7px;
+}
+.cid-uFdFQdHq0e .content-wrapper {
+  position: relative;
+  padding: 24px;
+  overflow: hidden;
+  border: 1px solid #7fb069;
+  background-color: #171200;
+}
+@media (max-width: 992px) {
+  .cid-uFdFQdHq0e .content-wrapper {
+    padding: 14px;
+    margin-bottom: 14px;
+  }
+}
+.cid-uFdFQdHq0e .content-wrapper .form-wrapper .dragArea.row {
+  position: relative;
+  z-index: 1;
+}
+.cid-uFdFQdHq0e .content-wrapper .form-wrapper .dragArea.row .form-group {
+  margin-bottom: 8px !important;
+}
+.cid-uFdFQdHq0e .content-wrapper .form-wrapper .dragArea.row .form-group .form-control-label {
+  width: 100%;
+  margin-bottom: 4px;
+}
+.cid-uFdFQdHq0e .content-wrapper .form-wrapper .dragArea.row .form-group .form-control {
+  position: relative;
+  z-index: 1;
+  padding: 14px 24px;
+  border: 1px solid #7fb069 !important;
+  background-color: transparent;
+  line-height: 1 !important;
+}
+@media (max-width: 992px) {
+  .cid-uFdFQdHq0e .content-wrapper .form-wrapper .dragArea.row .form-group .form-control {
+    padding: 14px;
+  }
+}
+.cid-uFdFQdHq0e .content-wrapper .form-wrapper .dragArea.row .form-group .form-control:hover,
+.cid-uFdFQdHq0e .content-wrapper .form-wrapper .dragArea.row .form-group .form-control:focus {
+  border: 1px solid #ffffff !important;
+}
+.cid-uFdFQdHq0e .content-wrapper .form-wrapper .dragArea.row .form-group .form-control::placeholder {
+  color: #ffffff;
+}
+.cid-uFdFQdHq0e .content-wrapper .form-wrapper .dragArea.row .form-group textarea {
+  min-height: 120px;
+}
+.cid-uFdFQdHq0e .content-wrapper .form-wrapper .dragArea.row .form-group .form-check {
+  padding-left: 2.3em;
+  margin-bottom: 16px;
+}
+.cid-uFdFQdHq0e .content-wrapper .form-wrapper .dragArea.row .form-group .form-check .form-check-input {
+  background-color: #7fb069;
+  border-color: #7fb069;
+}
+.cid-uFdFQdHq0e .content-wrapper .form-wrapper .dragArea.row .mbr-section-btn {
+  width: 100%;
+}
+.cid-uFdFQdHq0e .google-map {
+  height: 100%;
+}
+.cid-uFdFQdHq0e .google-map iframe {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  filter: invert(1);
+}
+@media (max-width: 992px) {
+  .cid-uFdFQdHq0e .google-map iframe {
+    height: 350px;
+    object-fit: cover;
+  }
+}
+.cid-uFdFQdHq0e .mbr-section-title {
+  color: #bcfe1e;
+}
+.cid-uFdFQdHq0e label {
+  color: #ffffff;
+}
+.cid-uFdFQdHq0e .mbr-section-title,
+.cid-uFdFQdHq0e .mbr-section-btn {
+  text-align: center;
+  color: #FFFFFF;
+}
+</style></div><div class="app-component" data-app-component-id="38"><div class="app-component-menu"><div class="app-component-edit"><span class="mbr-btn sortable mbr-icon-arrows-vertical hidden-interface tooltipstered" data-tooltipster="bottom"></span><span class="mbr-btn component-clone mbr-icon-copy hidden-interface tooltipstered" data-tooltipster="bottom"></span><span class="mbr-btn component-code mbr-icon-code hidden-interface tooltipstered" data-tooltipster="bottom"></span><span class="mbr-btn component-params mbr-icon-cog tooltipstered" data-tooltipster="bottom"></span><span class="mbr-btn component-remove mbr-icon-trash hidden-interface tooltipstered" data-tooltipster="bottom"></span><span class="mbr-btn component-show-more mbr-icon-horizontal-ellipsis tooltipstered" data-tooltipster="bottom"></span></div></div><div class="app-component-content"><section class="contacts02 tradem5 cid-uFdFQdRftF" data-bs-version="5.1" data-rv-view="113" id="contacts-2-uFdFQdRftF" mbr-class2="this | fakeFilter uname__1 _params.fullScreen _params.bg.parallax" mbr-id="_anchor">
+<div class="mbr-fallback-image disabled" data-app-remove-it="true" mbr-if="this | fakeFilter uname__23 _params.bg.type" style="display: none;"></div>
+<div class="mbr-overlay" data-app-remove-it="true" mbr-bg-color="this | fakeFilter uname__26 _params.overlayColor | toNULL" mbr-if="this | fakeFilter uname__24 _params.overlay _params.bg.type" mbr-opacity="this | fakeFilter uname__25 _params.overlayOpacity | toNULL" style="display: none; opacity: 0.7; background-color: rgb(8, 8, 19);"></div>
+<div class="container" mbr-class2="this | fakeFilter uname__27 _params.fullWidth _params.fullWidth">
+<div class="row">
+<div class="col-12">
+<div class="content-wrapper">
+<h2 class="mbr-section-title mbr-fonts-style display-2" data-app-edit="content" data-app-placeholder="Type Text" data-app-selector=".mbr-section-title, .mbr-section-btn" data-class-var="display-2" mbr-class-var="uname__28" mbr-content-edit="uname__31" mbr-if="this | fakeFilter uname__30 _params.showTitle" mbr-on-change-component-node="uname__32" mbr-on-change-theme-style="uname__29" mbr-static-html="uname__31">Get in Touch</h2>
+<ul class="list mbr-fonts-style display-5" data-app-edit="full" data-app-placeholder="Type Content" data-app-selector=".list, .item-wrap" data-class-var="display-5" data-multiline="true" mbr-class-var="uname__33" mbr-content-edit="uname__35" mbr-on-change-component-node="uname__36" mbr-on-change-theme-style="uname__34" mbr-static-html="uname__35">
+<li class="item-wrap">info@communityconnect.com</li>
+<li class="item-wrap">+1-800-555-0199</li>
+<li class="item-wrap">123 Innovation Drive, Tech City, CA 90210</li>
+</ul>
+<div class="border-wrap" mbr-if="this | fakeFilter uname__37 _params.showBorder"></div>
+</div>
+</div>
+</div>
+</div>
+</section></div><style>.cid-uFdFQdRftF {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #171200;
+}
+.cid-uFdFQdRftF .mbr-fallback-image.disabled {
+  display: none;
+}
+.cid-uFdFQdRftF .mbr-fallback-image {
+  display: block;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+.cid-uFdFQdRftF .content-wrapper .mbr-section-title {
+  margin-bottom: 32px;
+}
+.cid-uFdFQdRftF .content-wrapper .list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.cid-uFdFQdRftF .content-wrapper .list .item-wrap {
+  margin-bottom: 16px;
+  transition: all 0.3s ease;
+}
+.cid-uFdFQdRftF .content-wrapper .list .item-wrap:last-child {
+  margin-bottom: 0;
+}
+.cid-uFdFQdRftF .content-wrapper .list .item-wrap:hover,
+.cid-uFdFQdRftF .content-wrapper .list .item-wrap:focus {
+  color: #7fb069;
+}
+.cid-uFdFQdRftF .border-wrap {
+  margin-top: 64px;
+  height: 1px;
+  background: linear-gradient(90deg, #171200, #7fb069, #171200);
+}
+@media (max-width: 992px) {
+  .cid-uFdFQdRftF .border-wrap {
+    margin-top: 32px;
+  }
+}
+.cid-uFdFQdRftF .mbr-section-title {
+  color: #ffffff;
+  text-align: center;
+}
+.cid-uFdFQdRftF .list {
+  color: #bbbbbb;
+  text-align: center;
+}
+.cid-uFdFQdRftF .mbr-section-title,
+.cid-uFdFQdRftF .mbr-section-btn {
+  color: #FFFFFF;
+}
+.cid-uFdFQdRftF .list,
+.cid-uFdFQdRftF .item-wrap {
+  color: #FFFFFF;
+}
+</style></div><div class="app-component" data-app-component-id="39"><div class="app-component-menu"><div class="app-component-edit"><span class="mbr-btn sortable mbr-icon-arrows-vertical hidden-interface tooltipstered" data-tooltipster="bottom"></span><span class="mbr-btn component-code mbr-icon-code hidden-interface tooltipstered" data-tooltipster="bottom"></span><span class="mbr-btn component-params mbr-icon-cog tooltipstered" data-tooltipster="bottom"></span><span class="mbr-btn component-remove mbr-icon-trash hidden-interface tooltipstered" data-tooltipster="bottom"></span><span class="mbr-btn component-show-more mbr-icon-horizontal-ellipsis tooltipstered" data-tooltipster="bottom"></span></div></div><div class="app-component-content"><section class="footer01 tradem5 cid-uFcLNDjnZt" data-bs-version="5.1" data-rv-view="116" id="footer-1-uFcLNDjnZt" mbr-class2="this | fakeFilter uname__1 _params.fullScreen _params.bg.parallax" mbr-id="_anchor" once="footers">
+<div class="mbr-fallback-image disabled" data-app-remove-it="true" mbr-if="this | fakeFilter uname__22 _params.bg.type" style="display: none;"></div>
+<div class="mbr-overlay" data-app-remove-it="true" mbr-bg-color="this | fakeFilter uname__25 _params.overlayColor | toNULL" mbr-if="this | fakeFilter uname__23 _params.overlay _params.bg.type" mbr-opacity="this | fakeFilter uname__24 _params.overlayOpacity | toNULL" style="display: none; opacity: 0.7; background-color: rgb(8, 8, 19);"></div>
+<div class="container" mbr-class2="this | fakeFilter uname__26 _params.fullWidth _params.fullWidth">
+<div class="row items-wrap">
+<div class="col-12 col-lg-6 card" mbr-if="this | fakeFilter uname__27 _params.showTitle">
+<div class="title-wrapper">
+<a href="https://a.mobirise.com/app/builder/index.html#">
+<h2 class="mbr-section-title mbr-fonts-style display-1" data-app-edit="content" data-app-placeholder="Type Text" data-app-selector=".mbr-section-title" data-class-var="display-1" mbr-class-var="uname__28" mbr-content-edit="uname__30" mbr-on-change-component-node="uname__31" mbr-on-change-theme-style="uname__29" mbr-static-html="uname__30">Stay Connected</h2>
+</a>
+</div>
+</div>
+<div class="col-12 col-lg-6 card" mbr-if="this | fakeFilter uname__32 _params.showNav">
+<div class="nav-wrapper">
+<ul class="list mbr-fonts-style display-4" data-app-edit="full" data-app-placeholder="Type Content" data-app-selector=".list, .item-wrap, .nav-wrapper" data-class-var="display-4" data-multiline="true" mbr-class-var="uname__33" mbr-content-edit="uname__35" mbr-on-change-component-node="uname__36" mbr-on-change-theme-style="uname__34" mbr-static-html="uname__35">
+<li class="item-wrap">Facebook</li>
+<li class="item-wrap">Twitter</li>
+<li class="item-wrap">LinkedIn</li>
+<li class="item-wrap">Instagram</li>
+</ul>
+</div>
+</div>
+<div class="col-12" mbr-if="this | fakeFilter uname__37 _params.showCopy">
+<h2 class="mbr-copy mbr-fonts-style display-4" data-app-edit="content" data-app-placeholder="Type Text" data-app-selector=".mbr-copy" data-class-var="display-4" mbr-class-var="uname__38" mbr-content-edit="uname__40" mbr-on-change-component-node="uname__41" mbr-on-change-theme-style="uname__39" mbr-static-html="uname__40">© 2025 ESHA Hub. All rights reserved.</h2>
+</div>
+</div>
+</div>
+</section></div><style>.cid-uFcLNDjnZt {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #00180d;
+}
+.cid-uFcLNDjnZt .mbr-fallback-image.disabled {
+  display: none;
+}
+.cid-uFcLNDjnZt .mbr-fallback-image {
+  display: block;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+.cid-uFcLNDjnZt .items-wrap {
+  justify-content: center;
+}
+.cid-uFcLNDjnZt .items-wrap .card {
+  justify-content: flex-end;
+}
+.cid-uFcLNDjnZt .title-wrapper .mbr-section-title {
+  margin-bottom: 32px;
+}
+@media (max-width: 992px) {
+  .cid-uFcLNDjnZt .title-wrapper .mbr-section-title {
+    text-align: center;
+  }
+}
+.cid-uFcLNDjnZt .nav-wrapper {
+  margin-bottom: 32px;
+}
+.cid-uFcLNDjnZt .nav-wrapper .list {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.cid-uFcLNDjnZt .nav-wrapper .list .item-wrap {
+  padding: 5px 10px;
+  margin-bottom: 0;
+  transition: all 0.3s ease-in-out;
+}
+.cid-uFcLNDjnZt .nav-wrapper .list .item-wrap:hover,
+.cid-uFcLNDjnZt .nav-wrapper .list .item-wrap:focus {
+  color: #bcfe1e;
+}
+.cid-uFcLNDjnZt .mbr-copy {
+  margin-bottom: 0;
+  color: #FFFFFF;
+}
+@media (max-width: 992px) {
+  .cid-uFcLNDjnZt .mbr-copy {
+    text-align: center;
+  }
+}
+.cid-uFcLNDjnZt .mbr-section-title {
+  color: #FFFFFF;
+}
+.cid-uFcLNDjnZt .list,
+.cid-uFcLNDjnZt .nav-wrapper {
+  color: #ffffff;
+  text-align: right;
+}
+.cid-uFcLNDjnZt .list,
+.cid-uFcLNDjnZt .item-wrap,
+.cid-uFcLNDjnZt .nav-wrapper {
+  color: #FFFFFF;
+}
+</style></div></div>
+</div>
+<!-- jQuery -->
+<script id="JS-plugin-jQuery" src="./jquery.min.js.download"></script>
+<script src="./jquery-ui.min.js.download"></script>
+<script src="./jquery.ui.touch-punch.min.js.download"></script>
+<script src="./sightglass.js.download"></script>
+<script src="./rivets.js.download"></script>
+<script src="./rivets-extended-mbr.js.download"></script>
+<script src="./build.js.download"></script><input style="display: none;" type="text"/><div class="note-popover note-air-layout"><div class="note-button-popover popover in bottom" style="display: none;">
+<div class="arrow"></div>
+<div class="popover-content">
+<div class="btn-group">
+<button class="btn btn-default btn-sm" data-event="changeImage" data-media="image" tabindex="-1" type="button"><i class="mbr-icon-image"></i></button>
+<button class="btn btn-default btn-sm" data-event="changeVideo" data-media="video" tabindex="-1" type="button"><i class="mbr-icon-youtube"></i></button>
+<button class="btn btn-default btn-sm" data-event="changeIconfont" data-hide="true" data-media="iconFont" data-toggle="tooltip" tabindex="-1" title="Insert icon" type="button"><i class="mbr-icon-sun"></i></button></div>
+</div>
+</div></div>
+<div class="scrollToTop_wraper"><div class="scrollToTop mbr-arrow-up" id="scrollToTop" style="opacity: 0.1; display: none;"><a style="text-align: center;"><i></i></a></div></div></body><grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open"><style>
+      div.grammarly-desktop-integration {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select:none;
+        user-select:none;
+      }
+
+      div.grammarly-desktop-integration:before {
+        content: attr(data-content);
+      }
+    </style><div aria-label="grammarly-integration" class="grammarly-desktop-integration" data-content='{"mode":"full","isActive":true,"isUserDisabled":false}' role="group" tabindex="-1"></div></template></grammarly-desktop-integration></html>

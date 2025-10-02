@@ -1,0 +1,39 @@
+@font-face {
+  font-family: "Anton SC";
+  font-style: normal;
+  font-weight: 400;
+  src: local("AntonSC-Regular"),
+    url(Anton_SC/AntonSC-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Radio Canada Big";
+  font-style: normal;
+  font-weight: 400;
+  src: local("RadioCanadaBig-Regular"),
+  url(Radio_Canada_Big/RadioCanadaBig-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Radio Canada Big";
+  font-style: italic;
+  font-weight: 400;
+  src: local("RadioCanadaBig-Italic"),
+  url(Radio_Canada_Big/RadioCanadaBig-Italic.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Radio Canada Big";
+  font-style: normal;
+  font-weight: 700;
+  src: local("RadioCanadaBig-Bold"),
+    url(Radio_Canada_Big/RadioCanadaBig-Bold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Radio Canada Big";
+  font-style: italic;
+  font-weight: 700;
+  src: local("RadioCanadaBig-BoldItalic"),
+  url(Radio_Canada_Big/RadioCanadaBig-BoldItalic.ttf) format("truetype");
+}
